@@ -1,0 +1,38 @@
+@import "helpers/variables";
+.top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 20px;
+}
+
+.navbar-logo {
+    background: $energy_logo_path no-repeat;
+    width: 250px;
+    min-height: 36px;
+
+    overflow: hidden;
+    float: left;
+    // margin: 7px 0 0;
+    text-indent: -9999px;    
+    background-size: 100% auto;    
+    cursor: pointer;
+}
+
+.navbar-item {
+    margin-right: 27px;
+    text-align: right;
+    font-size: $navbar_fontsize;
+    overflow: hidden;
+}
+
+.beta-label {
+    color: #fff;
+    background: $material-orange-500;
+    font-size: $navbar_label;
+}

@@ -1,0 +1,13 @@
+@import "helpers/variables";
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  font-family: $font-stack;
+  color: $primary-color;
+  background: black;
+  // line-height: 1.8;
+}

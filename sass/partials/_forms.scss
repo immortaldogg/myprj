@@ -1,0 +1,49 @@
+@import "helpers/variables";
+.form {
+
+}
+
+%transparent {
+    background: transparent;    
+    color: #fff;    
+    border: none;
+    margin-right: 0px;
+}
+
+.transparent-input {
+    @extend %transparent;
+    max-width: $navbar_inlineform_width;
+    text-align: left;
+    padding: 0px 0px;
+    font-size: $navbar_fontsize - 1px;
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 1; /* Firefox */
+    }
+    
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #fff;
+    }
+    
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color: #fff;
+    }    
+}
+
+.transparent-btn {
+    @extend %transparent;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+}

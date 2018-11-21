@@ -19,6 +19,9 @@ body, html {
 .transparent {
   background: transparent; }
 
+.hidden-overflow {
+  overflow: hidden; }
+
 .top {
   position: fixed;
   width: 100%;
@@ -26,14 +29,12 @@ body, html {
 
 .navbar {
   width: 100%;
-  overflow: hidden;
   padding: 15px 20px; }
 
 .navbar-logo {
   background: url("/assets/images/energy_logo_cropped.png") no-repeat;
   width: 250px;
   min-height: 36px;
-  overflow: hidden;
   float: left;
   text-indent: -9999px;
   background-size: 100% auto;
@@ -49,6 +50,9 @@ body, html {
   color: #fff;
   background: #ff5722;
   font-size: 13px; }
+
+.navbar-logo-cell {
+  margin-right: 0px; }
 
 .transparent-input, .transparent-btn {
   background: transparent;

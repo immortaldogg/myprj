@@ -1,7 +1,7 @@
 const { src, dest, series, watch } = require('gulp');
 var sass = require('gulp-sass');
 
-function autocompile(cb) {
+function compile_scss(cb) {
     console.log("Some files changed. Updating...")
     src('./sass/main.scss')
         .pipe(sass().on('error', sass.logError))
@@ -18,15 +18,15 @@ function autocompile(cb) {
 
 function myprj_watcher(cb) {
     // Watch task
-    watch('./sass/**/*.scss', autocompile);
+    watch(['./sass/**/*.scss', './sass/main.scss'], compile_scss);
     cb();
 }
 
 function myprj_default(cb) {
-    console.log("Watching changes...")
+    console.log("Default task running...");
     cb();
 }
 
+exports.compile = compile_scss;
 exports.watch = myprj_watcher;
-
 exports.default = series(myprj_default, myprj_watcher);

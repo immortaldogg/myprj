@@ -1,0 +1,75 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+
+.flexbox {
+    display: flex;
+
+    // overflow
+    &--overflow-hidden {
+        overflow: hidden;
+    }
+
+    // justify content
+    &--justify-space-between {
+        justify-content: space-between;
+    }        
+    &--justifyContent-flexEnd {
+        justify-content: flex-end;
+    }
+
+    // flex direction
+    &--flexDir-col {
+        flex-direction: column;
+    }
+    &--flexDir-row {
+        flex-direction: row;
+    }
+
+    // align items
+    &--alignItems-flexEnd {
+        align-items: flex-end;
+    }
+    &--alignItems-center {
+        align-items: center;
+    }
+    &--alignItems-baseline {
+        align-items: baseline;
+    }
+
+    // flex wrap
+    &--wrap {
+        flex-wrap: wrap;
+    }
+
+    // custom flexbox
+    &__navlinks {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 12px;
+        list-style-type: none;
+    }
+}
+
+.brand {
+    @include img_background($energy_logo_path);
+    text-indent: -9999px;
+    width: 250px;
+    min-height: 36px;
+}
+
+%navbar_text {
+    font-size: $navbar_fontsize;
+}
+
+.navlink {
+    // display: inline;
+    margin-right: $navbar_items_margin_right;
+    font-size: $navbar_fontsize;
+}
+
+.version {
+    font-size: $navbar_version_label_fontsize;
+    background-color: $orange-500;
+    color: $white;
+    padding: 2px 9px;
+}

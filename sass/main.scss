@@ -1,5 +1,41 @@
 @import "base/typography";
 
 @import "partials/miscancellous";
-@import "partials/navigation";
+// @import "partials/navigation";
+@import "partials/navigation_new";
 @import "partials/forms";
+
+@media screen and (max-width: $breakpoint) {
+    .navlink  {
+        display: none;
+        &.navlink--notHidden {
+            display: block;
+        }
+    }
+
+    .transparent-btn {        
+        float: right;
+        height: inherit;
+        background: $secondary-color;
+        padding: $search_input_padding + 1px;
+    }
+
+    .transparent-input {
+        background: $white;
+        color: $black;
+        padding: $search_input_padding;
+
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $black;
+            opacity: 1; /* Firefox */
+        }
+        
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $black;
+        }
+        
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: $black;
+        }    
+    }
+}

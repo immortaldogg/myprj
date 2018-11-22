@@ -22,37 +22,94 @@ body, html {
 .hidden-overflow {
   overflow: hidden; }
 
-.top {
-  position: fixed;
-  width: 100%;
-  top: 0; }
-
-.navbar {
-  width: 100%;
-  padding: 15px 20px; }
-
-.navbar-logo {
-  background: url("/assets/images/energy_logo_cropped.png") no-repeat;
-  width: 250px;
-  min-height: 36px;
-  float: left;
-  text-indent: -9999px;
-  background-size: 100% auto;
+.p-cursor {
   cursor: pointer; }
 
-.navbar-item {
-  margin-right: 27px;
-  text-align: right;
-  font-size: 18px;
-  overflow: hidden; }
+.hidden {
+  visibility: hidden; }
 
-.beta-label {
+.ic-user {
+  content: url("/assets/icons/user_icon_18px.png");
+  display: inline;
+  vertical-align: baseline; }
+
+.ic-user-alone {
+  content: url("/assets/icons/user_icon_18px.png");
+  display: inline;
+  vertical-align: text-bottom; }
+
+.ic-lock {
+  content: url("/assets/icons/lock_icon_18px.png");
+  display: inline;
+  vertical-align: baseline; }
+
+.ic-lock-alone {
+  content: url("/assets/icons/lock_icon_18px.png");
+  display: inline;
+  vertical-align: text-bottom; }
+
+.ic-search {
+  content: url("/assets/icons/search_icon_18px.png");
+  display: inline;
+  vertical-align: baseline; }
+
+.ic-search-alone {
+  content: url("/assets/icons/search_icon_18px.png");
+  display: inline;
+  vertical-align: text-bottom; }
+
+.ic-bars {
+  content: url("/assets/icons/bars_icon_18px.png");
+  display: inline;
+  vertical-align: baseline; }
+
+.ic-bars-alone {
+  content: url("/assets/icons/bars_icon_18px.png");
+  display: inline;
+  vertical-align: text-bottom; }
+
+.flexbox {
+  display: flex; }
+  .flexbox--overflow-hidden {
+    overflow: hidden; }
+  .flexbox--justify-space-between {
+    justify-content: space-between; }
+  .flexbox--justifyContent-flexEnd {
+    justify-content: flex-end; }
+  .flexbox--flexDir-col {
+    flex-direction: column; }
+  .flexbox--flexDir-row {
+    flex-direction: row; }
+  .flexbox--alignItems-flexEnd {
+    align-items: flex-end; }
+  .flexbox--alignItems-center {
+    align-items: center; }
+  .flexbox--alignItems-baseline {
+    align-items: baseline; }
+  .flexbox--wrap {
+    flex-wrap: wrap; }
+  .flexbox__navlinks {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 12px;
+    list-style-type: none; }
+
+.brand {
+  background: url("/assets/images/energy_logo_cropped.png") no-repeat;
+  background-size: 100% auto;
+  text-indent: -9999px;
+  width: 250px;
+  min-height: 36px; }
+
+.navlink {
+  margin-right: 33px;
+  font-size: 18px; }
+
+.version {
+  font-size: 13px;
+  background-color: #ff5722;
   color: #fff;
-  background: #ff5722;
-  font-size: 13px; }
-
-.navbar-logo-cell {
-  margin-right: 0px; }
+  padding: 2px 9px; }
 
 .transparent-input, .transparent-btn {
   background: transparent;
@@ -64,7 +121,8 @@ body, html {
   max-width: 86px;
   text-align: left;
   padding: 0px 0px;
-  font-size: 17px; }
+  font-size: 17px;
+  vertical-align: baseline; }
   .transparent-input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
@@ -77,16 +135,34 @@ body, html {
     /* Microsoft Edge */
     color: #fff; }
 
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1;
-  /* Firefox */ }
+.test {
+  color: red; }
 
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #fff; }
+.test.test2 {
+  font-size: 30px; }
 
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #fff; }
+@media screen and (max-width: 1200px) {
+  .navlink {
+    display: none; }
+    .navlink.navlink--notHidden {
+      display: block; }
+  .transparent-btn {
+    float: right;
+    height: inherit;
+    background: #23ff22;
+    padding: 6px; }
+  .transparent-input {
+    background: #fff;
+    color: #000;
+    padding: 5px; }
+    .transparent-input::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #000;
+      opacity: 1;
+      /* Firefox */ }
+    .transparent-input:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #000; }
+    .transparent-input::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #000; } }

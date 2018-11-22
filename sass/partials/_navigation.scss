@@ -19,7 +19,7 @@
     float: left;
     // margin: 7px 0 0;
     text-indent: -9999px;    
-    background-size: 100% auto;    
+    background-size: 100% auto;
     cursor: pointer;
 }
 
@@ -37,5 +37,8 @@
 }
 
 .navbar-logo-cell {
-    margin-right: 0px;
+}
+
+.navbar-items-cell {
+    width: 80%;
 }

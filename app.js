@@ -49,5 +49,5 @@ http.createServer(function(req, res) {
             res.end(content, 'utf-8');
         }
     })
-}).listen(8125);
-console.log('Server running at http://localhost:8125/');
+}).listen(3000);
+console.log('Server running at http://localhost:3000/');

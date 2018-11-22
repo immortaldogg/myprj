@@ -1,0 +1,18 @@
+@mixin img_background($src) {
+    background: url($src) no-repeat;
+    background-size: 100% auto;
+}
+
+$ic-name-list: 'user', 'lock', 'search', 'bars';
+@each $name in $ic-name-list {    
+    .ic-#{$name} {
+        content:url("/assets/icons/#{$name}_icon_18px.png");
+        display: inline;
+        vertical-align: baseline;
+    }
+    .ic-#{$name}-alone {
+        content:url("/assets/icons/#{$name}_icon_18px.png");
+        display: inline;
+        vertical-align: text-bottom;
+    }
+}

@@ -1,11 +1,23 @@
 $primary-color: #fff;
-$material-orange-500: #ff5722;
+$secondary-color: #23ff22;
+$white: #fff;
+$black: #000;
+$orange-500: #ff5722;
+
 
 $font-stack: "Lato", sans-serif;
 
-$logo_path: url("/assets/images/milean_logo_cropped.png");
-$energy_logo_path: url("/assets/images/energy_logo_cropped.png");
+$logo_path: "/assets/images/milean_logo_cropped.png";
+$energy_logo_path: "/assets/images/energy_logo_cropped.png";
+
+$icon_user_path: "/assets/icons/user_icon_18px.png";
+$icon_lock_path: "/assets/icons/lock_icon_18px.png";
 
 $navbar_fontsize: 18px;
-$navbar_label: 13px;
+$navbar_version_label_fontsize: 13px;
 $navbar_inlineform_width: 86px;
+$navbar_items_margin_right: 33px;
+
+$search_input_padding: 5px;
+
+$breakpoint: 1200px;

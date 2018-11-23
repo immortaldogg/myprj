@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Myprj</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/normalize.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -14,25 +15,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 } */
-
-    /* First image (Logo. Full height) */
-    .bgimg-1 {
-        background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
-        min-height: 100%;
-    }
-
-    /* Second image (Portfolio) */
-    .bgimg-2 {
-        background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
-        min-height: 400px;
-    }
-
-    /* Third image (Contact) */
-    .bgimg-3 {
-        background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
-        min-height: 400px;
-    }
-
     .w3-wide {
         letter-spacing: 10px;
     }
@@ -42,64 +24,26 @@
     }
 
     /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1600px) {
-
+    /* @media only screen and (max-device-width: 1600px) {
         .bgimg-1,
         .bgimg-2,
         .bgimg-3 {
             background-attachment: scroll;
             min-height: 400px;
         }
-    }
+    } */
 </style>
 
 <body>
-
-    <!-- Navbar (sit on top) -->
-    <div class="top">
-        <!-- <table class="navbar">   
-        <tbody> 
-            <tr>
-                <td class = "navbar-logo-cell flr">
-                    <strong class="navbar-logo p-cursor">
-                        <a href="#">Milean</a>
-                    </strong>        
-                </td>
-                <td class = "navbar-items-cell">
-                    <span class = "navbar-item flr p-cursor"><i class="fa fa-bars"></i></span>
-                    <a class = "navbar-item flr bold p-cursor"><i class="fa fa-lock"></i> Login</a>
-                    <a class = "navbar-item flr bold p-cursor"><i class="fa fa-user"></i> Register</a>        
-                    <a class = "navbar-item flr p-cursor">Practice</a>        
-                    <a class = "navbar-item flr p-cursor">Teams</a>
-                    <a class = "navbar-item flr p-cursor">Players</a>
-                    <form class = "form flr d-inline">
-                        <button class = "navbar-item transparent-btn" type="submit"><i class="fa fa-search"></i></button>
-                        <input class = "navbar-item transparent-input" type="search" placeholder="Search...">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td class = "beta-label navbar-logo-cell flr">Beta</td>
-                <td class = "navbar-items-cell"></td>
-            </tr>
-        </tbody>
-    </table> -->
-    </div>
-
-    <!-- <div class = "test">
-    1234
-    <div class = "test2">1234</div>
-</div>
-<div class = "test test2">1234</div> -->
-
-
+    <!-- Sticky navigation bar -->
     <div class="container--position-fixed">
-        <div class="flexbox flexbox--justify-space-between flexbox--overflow-hidden">
+        <div class="flexbox flexbox--justifyContent-spaceBetween flexbox--overflow-hidden">
             <div class = "flexbox flexbox--flexDir-col flexbox--alignItems-flexEnd">
                 <div class="brand"></div>
                 <div class="version">Betaversion 1.0</div>
             </div>
-            <ul class = "flexbox flexbox__navlinks 
+            <ul class = "flexbox 
+                        flexbox--custom-navlinks
                         flexbox--flexDir-row 
                         flexbox--alignItems-baseline 
                         flexbox--overflow-hidden
@@ -116,10 +60,182 @@
                 <li class="navlink">Jamfor</li>
                 <li class="navlink bold"><img class="ic-lock"/>&nbsp;&nbsp;&nbsp;Logga in</li>
                 <li class="navlink bold"><img class="ic-user"/>&nbsp;&nbsp;&nbsp;Skapa konto</li>
-                <li class="navlink navlink--notHidden bold"><img class="ic-bars-alone"/>&nbsp;</li>
+                <li class="navlink bold"><img class="ic-bars-alone"/>&nbsp;</li>
             </ul>
         </div>
     </div>
+
+    <!-- Jumbotron main  -->
+    <div class="container">
+        <div class="bg-jumbotron">
+            <div class="jumbotron">
+                <h2 class="jumbotron__title">Full koll med Energiporten</h2>
+                <p class="jumbotron__text"><strong>Lorem ipsum dolor sit amet, sea ut tale prompta oportere.</strong> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></p>
+                <div class="flexbox flexbox--wrap">
+                    <button class="button 
+                            button--custom-jumbo
+                            button--padding-medium 
+                            button--bgcolor-bluegray 
+                            button--border-no">
+                        <span class="button__span"><img class="ic-externallink-alone"/></span>
+                        <span class="button__text">Energiguiden Energiguiden</span>
+                    </button>
+                    <button class="button 
+                            button--custom-jumbo
+                            button--padding-medium 
+                            button--bgcolor-bluegray 
+                            button--border-no">
+                        <span class="button__span"><img class="ic-building-alone"></span>
+                        <span class="button__text">Energiguiden Energiguiden</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote carousel -->
+    <div class="container">
+        <div class="flexbox 
+                    flexbox--nowrap
+                    flexbox--flexDir-row
+                    flexbox--justifyContent-spaceBetween
+                    flexbox--alignItems-center
+                    p-4 bg-white">
+            <img class="flexbox__items ic-navigate-left"/>
+            <div class="flexbox__items--grow
+                        flexbox 
+                        flexbox--wrap
+                        flexbox--alignItems-center">
+                <img src="/assets/images/avatar_girl1.jpg" 
+                     class="avatar 
+                            avatar--rounded 
+                            avatar--size-medium"/>
+                <div class="peoplebox ml-7">
+                    <p class="peoplebox__quote ">
+                        <q class="quote--emdash">Drifting away like a feather in air!</q>
+                    </p>
+                    <p class="peoplebox__name">
+                        Jessica Boomerang Shooting Gun Bang Bang
+                    </p>
+                    <p class="peoplebox__office">
+                        BRF CYKELN 10 - Malmo
+                    </p>
+                    <button class="button 
+                            button--custom-peoplebox
+                            button--padding-medium 
+                            button--bgcolor-cyan
+                            button--border-no">
+                        <span class="button__span"><img class="ic-building-alone"></span>
+                        <span class="button__text">Energiguiden Energiguiden</span>
+                    </button>
+                </div>
+            </div>
+            <img class="flexbox__items ic-navigate-right"/>
+        </div>
+    </div>
+
+    <!-- Features List -->
+    <div class="container">
+        <div class="bg-greygradient-darker">
+            <ul class="flexbox
+                        flexbox--custom-features
+                        flexbox--wrap
+                        p-10">                
+                <li class="grid grid--feature ">
+                    <img class="grid--feature__icon
+                                ic-exchange"/>
+                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
+                    <div class="grid--feature__description"> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
+                </li>
+                <li class="grid grid--feature ">
+                    <img class="grid--feature__icon
+                                ic-android-people"/>
+                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
+                    <div class="grid--feature__description"> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
+                </li>
+                <li class="grid grid--feature ">
+                    <img class="grid--feature__icon
+                                ic-mi-show"/>
+                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
+                    <div class="grid--feature__description"> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
+                </li>
+                <li class="grid grid--feature ">
+                    <img class="grid--feature__icon
+                                ic-mfglabs-chart"/>
+                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
+                    <div class="grid--feature__description"> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
+                </li>
+                <li class="grid grid--feature ">
+                    <img class="grid--feature__icon
+                                ic-mi-playlist-add-check"/>
+                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
+                    <div class="grid--feature__description"> 
+                        Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong>
+                        <br/>
+                    </div>
+                    <div class="grid--feature__additional">                        
+                        <button class="button 
+                                button--custom-peoplebox
+                                button--padding-medium 
+                                button--bgcolor-lime
+                                button--border-no">
+                            <span class="button__span"><img class="ic-externallink-alone"></span>
+                            <span class="button__text">Energiguiden Energiguiden</span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid grid--feature ">
+                    <img class="grid--feature__icon
+                                ic-ion-ios-body"/>
+                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
+                    <div class="grid--feature__description"> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
+                    <div class="grid--feature__additional">                        
+                        <button class="button 
+                                button--custom-peoplebox
+                                button--padding-medium 
+                                button--bgcolor-lime
+                                button--border-no">
+                            <span class="button__span"><img class="ic-externallink-alone"></span>
+                            <span class="button__text">Energiguiden Energiguiden</span>
+                        </button>
+                    </div>
+                </li>                
+            </ul>            
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div class="container">
+            <div class="bg-map">
+                <div class="jumbotron
+                            jumbotron--overlaybg">
+                    <h2 class="jumbotron__title">Full koll med Energiporten</h2>
+                    <p class="jumbotron__text"><strong>Lorem ipsum dolor sit amet, sea ut tale prompta oportere.</strong> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></p>
+                    <div class="flexbox flexbox--wrap">
+                        <button class="button 
+                                button--custom-jumbo
+                                button--padding-medium 
+                                button--bgcolor-bluegray 
+                                button--border-no">
+                            <span class="button__span"><img class="ic-externallink-alone"/></span>
+                            <span class="button__text">Energiguiden Energiguiden</span>
+                        </button>
+                        <button class="button 
+                                button--custom-jumbo
+                                button--padding-medium 
+                                button--bgcolor-bluegray 
+                                button--border-no">
+                            <span class="button__span"><img class="ic-building-alone"></span>
+                            <span class="button__text">Energiguiden Energiguiden</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Contact - Quick links -->
+
+    <!-- Footer -->
 
     <br />
 

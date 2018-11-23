@@ -1,0 +1,17 @@
+@import "helpers/variables";
+.peoplebox {
+    &__quote {
+        font-weight: bold;
+        font-size: $navbar_fontsize * 1.7;
+        color: $bluegray-500;
+    }
+    &__name {
+        font-weight: bold;
+        font-size: $navbar_fontsize * 0.7;
+        color: $bluegray-500;
+    }
+    &__office {
+        font-size: $navbar_fontsize * 0.7;
+        color: $bluegray-500;
+    }
+}

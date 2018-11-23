@@ -1,0 +1,21 @@
+@import "helpers/variables";
+.jumbotron {
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 40%;
+
+    // &--overlaybg {
+    //     background
+    // }
+    
+    &__title {
+        color: $black;
+        font-size: $navbar_fontsize * 2.3;
+    }
+
+    &__text {
+        color: $black;
+        font-size: $navbar_fontsize;
+        margin-bottom: 75px;
+    }
+}

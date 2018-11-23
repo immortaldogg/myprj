@@ -1,0 +1,17 @@
+@import "helpers/mixins";
+
+.avatar {
+
+    &--size-medium {
+        height: 150px;
+        width: 150px;
+    }
+
+    &--size-large {
+        height: 250px;
+        width: 250px;
+    }
+    &--rounded {
+        border-radius: 50%;
+    }
+}

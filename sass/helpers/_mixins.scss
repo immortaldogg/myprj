@@ -3,8 +3,12 @@
     background-size: 100% auto;
 }
 
-$ic-name-list: 'user', 'lock', 'search', 'bars';
-@each $name in $ic-name-list {    
+// @mixin img_src($src) {
+//     content:url($src);
+// }
+
+$ic-name-list-18px: 'user', 'lock', 'search', 'bars', 'building', 'externallink';
+@each $name in $ic-name-list-18px {    
     .ic-#{$name} {
         content:url("/assets/icons/#{$name}_icon_18px.png");
         display: inline;
@@ -14,5 +18,86 @@ $ic-name-list: 'user', 'lock', 'search', 'bars';
         content:url("/assets/icons/#{$name}_icon_18px.png");
         display: inline;
         vertical-align: text-bottom;
+    }
+}
+
+$ic-name-list-36px: 'navigate-left', 'navigate-right', 'mi-show', 'android-people', 'exchange', 'ion-ios-body', 'mfglabs-chart', 'mi-playlist-add-check';
+@each $name in $ic-name-list-36px {    
+    .ic-#{$name} {
+        content:url("/assets/icons/#{$name}_icon_36px.png");
+        display: inline;
+        vertical-align: baseline;
+    }
+    .ic-#{$name}-alone {
+        content:url("/assets/icons/#{$name}_icon_36px.png");
+        display: inline;
+        vertical-align: text-bottom;
+    }
+}
+
+$bg-list: 'jumbotron', 'greygradient', 'greygradient-darker', 'map';
+@each $name in $bg-list {
+    .bg-#{$name} {
+        background: url("/assets/images/bg_#{$name}.jpg") no-repeat;        
+        @if $name == 'greygradient-darker' {
+            background-repeat: repeat;
+        }
+
+        background-size: 100% auto;
+        // height: $bg-jumbo-height;
+        @if $name != 'greygradient-darker' {
+            height: $bg-jumbo-height;
+        } @else {
+            height: auto;
+        }
+    }
+    .bg-#{$name}-small {
+        background: url("/assets/images/bg_#{$name}.jpg") no-repeat;
+        background-size: 50% auto;
+        height: $bg-jumbo-height/2;
+    }
+}
+
+@media screen and (max-width: $breakpoint) {
+    @each $name in $bg-list {
+        .bg-#{$name} {
+            background-size: auto;
+            background-repeat: repeat-y;
+            @if $name == 'jumbotron' {
+                height: $bg-jumbo-height;
+            } @else {
+                height: auto;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 10 {
+    .ml-#{$i} {
+        margin-left: $i * 10px;
+    }
+    .mr-#{$i} {
+        margin-right: $i * 10px;
+    }
+    .mt-#{$i} {
+        margin-top: $i * 10px;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i * 10px;
+    }
+    .pl-#{$i} {
+        padding-bottom: $i * 10px;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i * 10px;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i * 10px;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i * 10px;
+    }
+    .p-#{$i} {
+        padding: $i * 10px;
     }
 }

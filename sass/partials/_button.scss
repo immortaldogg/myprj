@@ -1,0 +1,51 @@
+@import "helpers/variables";
+.button {    
+    border-radius: 3px;
+
+    //custom
+    &--custom-jumbo {
+        margin-right: 31px; 
+    }
+
+    &--custom-peoplebox {
+        
+    }
+
+    &__span {
+        border-right: solid 1px $white;
+        font-size: $navbar_fontsize;    
+        
+        padding: $button-medium-padding;
+        padding-left: 0px;
+    }
+
+    &__text {
+        font-size: $navbar_fontsize;
+
+        padding: $button-medium-padding;
+        padding-right: 0px;
+    }
+
+    &--bgcolor-bluegray {
+        background: $bluegray-500;        
+        color: $white;
+    }
+
+    &--bgcolor-cyan {
+        background: $cyan-500;        
+        color: $white;
+    }
+
+    &--bgcolor-lime {
+        background: $lime-500;        
+        color: $white;
+    }
+
+    &--padding-medium {
+        padding: $button-medium-padding;
+    }
+
+    &--border-no {
+        border: none;
+    }
+}

@@ -1,23 +1,45 @@
 @import "base/typography";
 
+@import "helpers/variables";
+
 @import "partials/miscancellous";
 // @import "partials/navigation";
+
+@import "partials/containers";
 @import "partials/navigation_new";
+@import "partials/flexbox";
 @import "partials/forms";
+@import "partials/jumbotron";
+@import "partials/button";
+@import "partials/image";
+@import "partials/peoplebox";
+
+@import "partials/grid";
 
 @media screen and (max-width: $breakpoint) {
+
+    .brand {
+        width: 250px /4 * 3;
+        min-height: 36px /4 *3;
+    }
+
     .navlink  {
         display: none;
+        margin-right: 10px;
         &.navlink--notHidden {
             display: block;
         }
     }
 
+    .version {
+        font-size: $navbar_version_label_fontsize /4*3;
+    }
+
     .transparent-btn {        
         float: right;
         height: inherit;
-        background: $secondary-color;
-        padding: $search_input_padding + 1px;
+        background: $bluegray-500;
+        padding: $search_input_padding - 1px;        
     }
 
     .transparent-input {
@@ -38,4 +60,58 @@
             color: $black;
         }    
     }
+
+    .jumbotron {
+        padding-right: 5%;
+    }
+
+    .button {
+        &--custom-jumbo {
+            margin-top: 25px;
+        }
+        &--custom-peoplebox {
+            margin: auto;
+        }
+
+        &__text {
+            padding: 0px;
+            font-size: initial;
+        }
+    }
+
+    .avatar {
+        margin: auto;
+    }
+
+    .peoplebox {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .grid {
+        &--feature {
+            flex-basis: 100%;
+            flex-shrink: 0;
+            flex-grow: 0;
+
+            margin-bottom: 25px;
+        }
+    }
+
+    .flexbox {
+        &--custom-features {
+            padding: 10px;
+            padding-top: 30px;
+        }
+    }
+}
+
+@mixin test($param){
+	&.xyz {
+        padding: $param;
+    }
+}
+
+.abc {
+    @include test(5px);
 }

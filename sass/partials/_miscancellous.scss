@@ -25,3 +25,13 @@
 .hidden {
     visibility: hidden;
 }
+
+.quote {
+    &--emdash {
+        quotes: "–" "";
+    }
+}
+
+.bg-white {
+    background: $white;
+}

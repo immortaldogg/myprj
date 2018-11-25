@@ -45,9 +45,29 @@ body, html {
 .container--display-grid {
   display: grid; }
 
+.container--map {
+  padding-top: 12%;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.container--main {
+  padding-top: 12%;
+  padding-left: 5%;
+  padding-right: 5%; }
+
 .custom-ul {
   margin: 0px 0px;
   list-style-type: none; }
+
+.ic-fa-close {
+  content: url("/assets/icons/fa-close_icon_15px.png");
+  display: inline;
+  vertical-align: baseline; }
+
+.ic-fa-close-alone {
+  content: url("/assets/icons/fa-close_icon_15px.png");
+  display: inline;
+  vertical-align: text-bottom; }
 
 .ic-user {
   content: url("/assets/icons/user_icon_18px.png");
@@ -564,6 +584,9 @@ body, html {
     flex-shrink: 3; }
   .flexbox__items--grow {
     flex-grow: 1; }
+  .flexbox__items--vertical-2 {
+    width: 50%;
+    flex: 1 1 80px; }
   .flexbox--custom-navlinks {
     padding: 0px;
     margin: 0px 0px;
@@ -573,6 +596,8 @@ body, html {
     margin: 0px 0px;
     list-style-type: none;
     justify-content: space-between; }
+  .flexbox--custom-quicklinks {
+    height: 800px; }
 
 .transparent-input, .transparent-btn {
   background: transparent;
@@ -605,16 +630,22 @@ body, html {
   font-size: 30px; }
 
 .jumbotron {
-  padding-top: 15%;
-  padding-left: 5%;
-  padding-right: 40%; }
+  padding: 1.4%;
+  margin-right: 60%; }
+  .jumbotron__topbar {
+    width: 100%;
+    text-align: right;
+    float: right; }
   .jumbotron__title {
     color: #000;
     font-size: 41.4px; }
   .jumbotron__text {
     color: #000;
-    font-size: 18px;
-    margin-bottom: 75px; }
+    font-size: 18px; }
+  .jumbotron--overlaybg {
+    background-color: rgba(111, 114, 103, 0.5); }
+  .jumbotron--rounded-border {
+    border-radius: 4px; }
 
 .button {
   border-radius: 3px; }
@@ -642,6 +673,16 @@ body, html {
     padding: 10px; }
   .button--border-no {
     border: none; }
+
+.ic-fa-close {
+  content: url("/assets/icons/fa-close_icon_15px.png");
+  display: inline;
+  vertical-align: baseline; }
+
+.ic-fa-close-alone {
+  content: url("/assets/icons/fa-close_icon_15px.png");
+  display: inline;
+  vertical-align: text-bottom; }
 
 .ic-user {
   content: url("/assets/icons/user_icon_18px.png");
@@ -1198,7 +1239,8 @@ body, html {
       /* Microsoft Edge */
       color: #000; }
   .jumbotron {
-    padding-right: 5%; }
+    margin-right: 0%;
+    padding: 7%; }
   .button--custom-jumbo {
     margin-top: 25px; }
   .button--custom-peoplebox {
@@ -1218,7 +1260,9 @@ body, html {
     margin-bottom: 25px; }
   .flexbox--custom-features {
     padding: 10px;
-    padding-top: 30px; } }
+    padding-top: 30px; }
+  .flexbox--custom-quicklinks {
+    height: auto; } }
 
 .abc.xyz {
   padding: 5px; }

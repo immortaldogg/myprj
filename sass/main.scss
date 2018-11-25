@@ -62,7 +62,8 @@
     }
 
     .jumbotron {
-        padding-right: 5%;
+        margin-right: 0%;
+        padding: 7%;
     }
 
     .button {
@@ -102,6 +103,14 @@
         &--custom-features {
             padding: 10px;
             padding-top: 30px;
+        }
+        &--custom-quicklinks {
+            height: auto;
+        }
+        &__items {
+            &--vertical {
+
+            }
         }
     }
 }

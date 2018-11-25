@@ -7,6 +7,21 @@
 //     content:url($src);
 // }
 
+
+$ic-name-list-15px: 'fa-close';
+@each $name in $ic-name-list-15px {    
+    .ic-#{$name} {
+        content:url("/assets/icons/#{$name}_icon_15px.png");
+        display: inline;
+        vertical-align: baseline;
+    }
+    .ic-#{$name}-alone {
+        content:url("/assets/icons/#{$name}_icon_15px.png");
+        display: inline;
+        vertical-align: text-bottom;
+    }
+}
+
 $ic-name-list-18px: 'user', 'lock', 'search', 'bars', 'building', 'externallink';
 @each $name in $ic-name-list-18px {    
     .ic-#{$name} {

@@ -1,12 +1,19 @@
 @import "helpers/variables";
 .jumbotron {
-    padding-top: 15%;
-    padding-left: 5%;
-    padding-right: 40%;
+    // padding-top: 15%;
+    padding: 1.4%;
+    margin-right: 60%;
+    // padding: 2%;
 
     // &--overlaybg {
     //     background
     // }
+
+    &__topbar {
+        width: 100%;
+        text-align: right;
+        float: right;
+    }
     
     &__title {
         color: $black;
@@ -16,6 +23,17 @@
     &__text {
         color: $black;
         font-size: $navbar_fontsize;
-        margin-bottom: 75px;
+    }
+    
+    &__action {
+
+    }
+
+    &--overlaybg {
+        background-color: rgba($color: $greenbrown, $alpha: 0.5)
+    }
+
+    &--rounded-border {
+        border-radius: 4px;
     }
 }

@@ -1,25 +1,68 @@
 @import "helpers/variables";
-.mycheckbox {
+
+/* Customize the label  */
+.w3checkbox {
     display: block;
     position: relative;
+    padding-left: 6rem;
+    margin-bottom: 2rem;
     cursor: pointer;
-    font-size: $navbar-fontsize;
+    font-size: 4rem;
 
-    // hide default checkbox
     & input {
+        /* Hide the browser's default checkbox */
         position: absolute;
         opacity: 0;
         cursor: pointer;
         height: 0;
         width: 0;
+
+        /* When the checkbox is checked, add a blue background */
+        &:checked {
+            // to the checkmark span
+            &~.checkmark {
+                background-color: $bluegray-500;
+                &:after {
+                    display: block;
+                }
+            }
+            
+        }
+    }
+    /* On mouse-over, add a grey background color */
+    &:hover {
+        & input~.checkmark {
+            background-color: #ccc;            
+        }
+    }
+
+    & .checkmark {
+        &:after {
+            left: 1.25rem;
+            top: 0.5rem;
+            width: 1rem;
+            height: 2rem;
+            border: solid white;
+            border-width: 0 0.5rem 0.5rem 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
     }
 }
 
+/* Create a custom checkbox */
 .checkmark {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 4rem;
+    width: 4rem;
     background-color: #eee;
+    /* Create the checkmark/indicator (hidden when not checked) */
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
 }

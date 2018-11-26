@@ -64,6 +64,13 @@
 
         &--basis-half {
             flex-basis: 50%;
+            @media screen and (max-width: $breakpoint) {
+                flex-basis: 100%;
+            }
+        }
+
+        &--width-half {
+            width: 50%;
         }
 
         &--vertical-2 {

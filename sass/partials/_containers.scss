@@ -1,7 +1,9 @@
 .container {
+    display: block;
+
     &--position-fixed {
         position: fixed;
-        width: 100%;
+        width: 100vw;
         top: 0;
     }
 
@@ -14,9 +16,10 @@
     }
 
     &--map {
-        padding-top: 12%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 12% 5%;
+        @media screen and (max-width: $breakpoint) {
+            padding: 25% 2%;
+        }
     }
 
     &--main {
@@ -24,9 +27,46 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+
+    &--quicklinks {
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    &--carousel {
+        padding: 2%;
+        @media screen and (max-width: $breakpoint) {
+            padding: 14% 2%;
+        }
+    }
+
+    &--features {
+        padding: 5%;
+        @media screen and (max-width: $breakpoint) {
+            padding: 3%;
+        }
+    }
+
+    &--footer {
+        padding: 2% 17%;
+    }
 }
 
-.custom-ul {
-    margin: 0px 0px;
-    list-style-type: none;
+$bg-list: 'jumbotron', 'greygradient', 'greygradient-darker', 'map';
+@each $name in $bg-list {
+    .bg-#{$name} {
+        background: url("/assets/images/bg_#{$name}.jpg") no-repeat;
+        background-size: cover;
+        height: auto;
+        @if $name == "jumbotron" {height: 100rem;}
+        @if $name == "map" {height: 100rem;}
+        
+        @media screen and (max-width: $breakpoint) {
+            height: auto;
+            // @if $name == "jumbotron" {height: 100rem;}
+            @if $name == "map" {height: 100rem;}
+        }
+    }
 }

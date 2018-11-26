@@ -36,31 +36,34 @@
 
 <body>
     <!-- Sticky navigation bar -->
-    <div class="container--position-fixed">
-        <div class="flexbox flexbox--justifyContent-spaceBetween flexbox--overflow-hidden">
-            <div class = "flexbox flexbox--flexDir-col flexbox--alignItems-flexEnd">
+    <div class="container
+                container--position-fixed">
+        <div class="flexbox 
+                    flexbox--justifyContent-spaceBetween">
+            <div class = "flexbox 
+                            flexbox--flexDir-col 
+                            flexbox--alignItems-flexEnd">
                 <div class="brand"></div>
                 <div class="version">Betaversion 1.0</div>
             </div>
-            <ul class = "flexbox 
-                        flexbox--custom-navlinks
-                        flexbox--flexDir-row 
-                        flexbox--alignItems-baseline 
-                        flexbox--overflow-hidden
-                        flexbox--justify-space-flexEnd
-                        flexbox--wrap">
-                <li class="navlink navlink--notHidden">
-                    <form class="d-inline">
-                        <button class="transparent-btn"><img class="ic-search-alone"/></button>
-                        <input class="transparent-input" type="search" placeholder="Sok"/>
+            <ul class = "flexbox
+                            flexbox--navlinks
+                            flexbox--flexDir-row
+                            flexbox--justifyContent-flexEnd
+                            ul--style-removed">
+                <li class="navlink 
+                            navlink--notHiddenAtBreakpoint">
+                    <form class="inline">
+                        <label class="label label--transparent"><img class="ic-fa-search--alone"/></label>
+                        <input class="input input--transparent" type="search" placeholder="Sok"/>
                     </form>
                 </li>
                 <li class="navlink">Energiguiden</li>
                 <li class="navlink">Energiskolan</li>
                 <li class="navlink">Jamfor</li>
-                <li class="navlink bold"><img class="ic-lock"/>&nbsp;&nbsp;&nbsp;Logga in</li>
-                <li class="navlink bold"><img class="ic-user"/>&nbsp;&nbsp;&nbsp;Skapa konto</li>
-                <li class="navlink bold"><img class="ic-bars-alone"/>&nbsp;</li>
+                <li class="navlink bold"><img class="ic-fa-lock"/>&nbsp;&nbsp;&nbsp;Logga in</li>
+                <li class="navlink bold"><img class="ic-fa-user-plus"/>&nbsp;&nbsp;&nbsp;Skapa konto</li>
+                <li class="navlink navlink--notHiddenAtBreakpoint bold"><img class="ic-fa-bars--alone"/></li>
             </ul>
         </div>
     </div>
@@ -70,24 +73,27 @@
                 container--main
                 bg-jumbotron">
         <!-- <div class="bg-jumbotron"> -->
-            <div class="jumbotron">
-                <h2 class="jumbotron__title">Full koll med Energiporten</h2>
-                <p class="jumbotron__text"><strong>Lorem ipsum dolor sit amet, sea ut tale prompta oportere.</strong> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></p>
-                <div class="flexbox flexbox--wrap">
+            <div class="jumbotron--main
+                        flexbox
+                        flexbox--flexDir-col
+                        flexbox--justifyContent-spaceAround">
+                <div class="jumbotron__title">Full koll med Energiporten</div>
+                <div class="jumbotron__text"><strong>Lorem ipsum dolor sit amet, sea ut tale prompta oportere.</strong> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
+                <div class="flexbox flexbox--justifyContent-flexStart flexbox--wrap">
                     <button class="button 
-                            button--custom-jumbo
-                            button--padding-medium 
+                            button--default
                             button--bgcolor-bluegray 
-                            button--border-no">
-                        <span class="button__span"><img class="ic-externallink-alone"/></span>
+                            button--border-no
+                            flexbox">
+                        <span class="button__span"><img class="ic-fa-external-link--alone"/></span>
                         <span class="button__text">Energiguiden Energiguiden</span>
                     </button>
                     <button class="button 
-                            button--custom-jumbo
-                            button--padding-medium 
+                            button--default
                             button--bgcolor-bluegray 
-                            button--border-no">
-                        <span class="button__span"><img class="ic-building-alone"></span>
+                            button--border-no
+                            flexbox">
+                        <span class="button__span"><img class="ic-fa-building--alone"></span>
                         <span class="button__text">Energiguiden Energiguiden</span>
                     </button>
                 </div>
@@ -96,14 +102,20 @@
     </div>
 
     <!-- Quote carousel -->
-    <div class="container">
+    <div class="container
+                container--carousel
+                bg-white">
         <div class="flexbox 
                     flexbox--nowrap
                     flexbox--flexDir-row
                     flexbox--justifyContent-spaceBetween
-                    flexbox--alignItems-center
-                    p-4 bg-white">
-            <img class="flexbox__items ic-navigate-left"/>
+                    flexbox--alignItems-center">
+            <!-- arrow left -->
+            <img class="flexbox__items 
+                        ic-mi-navigate-before 
+                        ic--size-medium
+                        ic--minimized"/>
+            <!-- person info -->
             <div class="flexbox__items--grow
                         flexbox 
                         flexbox--wrap
@@ -112,7 +124,7 @@
                      class="avatar 
                             avatar--rounded 
                             avatar--size-medium"/>
-                <div class="peoplebox ml-7">
+                <div class="peoplebox">
                     <p class="peoplebox__quote ">
                         <q class="quote--emdash">Drifting away like a feather in air!</q>
                     </p>
@@ -123,85 +135,126 @@
                         BRF CYKELN 10 - Malmo
                     </p>
                     <button class="button 
-                            button--custom-peoplebox
-                            button--padding-medium 
+                            button--default
+                            button--centerNeeded
                             button--bgcolor-cyan
-                            button--border-no">
-                        <span class="button__span"><img class="ic-building-alone"></span>
+                            button--border-no
+                            flexbox">
+                        <span class="button__span"><img class="ic-fa-building--alone"></span>
                         <span class="button__text">Energiguiden Energiguiden</span>
                     </button>
                 </div>
             </div>
-            <img class="flexbox__items ic-navigate-right"/>
+            <!-- arrow right -->
+            <img class="flexbox__items 
+                        ic-mi-navigate-next 
+                        ic--size-medium
+                        ic--minimized"/>
         </div>
     </div>
 
     <!-- Features List -->
-    <div class="container">
-        <div class="bg-greygradient-darker">
+    <div class="container
+                container--features
+                bg-greygradient-darker">
             <ul class="flexbox
-                        flexbox--custom-features
+                        flexbox--justifyContent-spaceBetween
                         flexbox--wrap
-                        p-10">                
+                        ul--style-removed">                
+                <!-- 1 -->
                 <li class="grid grid--feature ">
                     <img class="grid--feature__icon
-                                ic-exchange"/>
-                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
-                    <div class="grid--feature__description"> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
-                </li>
-                <li class="grid grid--feature ">
-                    <img class="grid--feature__icon
-                                ic-android-people"/>
-                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
-                    <div class="grid--feature__description"> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
-                </li>
-                <li class="grid grid--feature ">
-                    <img class="grid--feature__icon
-                                ic-mi-show"/>
-                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
-                    <div class="grid--feature__description"> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
-                </li>
-                <li class="grid grid--feature ">
-                    <img class="grid--feature__icon
-                                ic-mfglabs-chart"/>
-                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
-                    <div class="grid--feature__description"> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
-                </li>
-                <li class="grid grid--feature ">
-                    <img class="grid--feature__icon
-                                ic-mi-playlist-add-check"/>
-                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
-                    <div class="grid--feature__description"> 
-                        Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong>
-                        <br/>
+                                ic-fa-exchange
+                                ic--size-medium" />
+                    <div class="grid--feature__title flexbox flexbox--alignItems-center">
+                        <span>Loremsea ut<strong>portere.</strong></span>
                     </div>
+                    <div class="grid--feature__description">
+                        <span>Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></span>
+                    </div>
+                </li>
+                <!-- 2 -->
+                <li class="grid grid--feature ">
+                    <img class="grid--feature__icon
+                                ic-ion-android-people
+                                ic--size-medium" />
+                    <div class="grid--feature__title flexbox flexbox--alignItems-center">
+                        <span>Loremsea ut<strong>portere.</strong></span>
+                    </div>
+                    <div class="grid--feature__description">
+                        <span>Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></span>
+                    </div>
+                </li>
+                <!-- 3 -->
+                <li class="grid grid--feature ">
+                    <img class="grid--feature__icon
+                                ic-mi-show-chart
+                                ic--size-medium" />
+                    <div class="grid--feature__title flexbox flexbox--alignItems-center">
+                        <span>Loremsea ut<strong>portere.</strong></span>
+                    </div>
+                    <div class="grid--feature__description">
+                        <span>Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></span>
+                    </div>
+                </li>
+                <!-- 4 -->
+                <li class="grid grid--feature ">
+                    <img class="grid--feature__icon
+                                ic-mfglabs-chart
+                                ic--size-medium" />
+                    <div class="grid--feature__title flexbox flexbox--alignItems-center">
+                        <span>Loremsea ut<strong>portere.</strong></span>
+                    </div>
+                    <div class="grid--feature__description">
+                        <span>Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></span>
+                    </div>
+                </li>
+                <!-- 5 -->
+                <li class="grid grid--feature ">
+                    <img class="grid--feature__icon
+                                ic-mi-playlist-add-check
+                                ic--size-medium" />
+                    <div class="grid--feature__title flexbox flexbox--alignItems-center">
+                        <span>Loremsea ut<strong>portere.</strong></span>
+                    </div>
+                    <div class="grid--feature__description">
+                        <span>Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></span>
+                    </div>
+
                     <div class="grid--feature__additional">                        
                         <button class="button 
-                                button--custom-peoplebox
-                                button--padding-medium 
-                                button--bgcolor-lime
-                                button--border-no">
-                            <span class="button__span"><img class="ic-externallink-alone"></span>
-                            <span class="button__text">Energiguiden Energiguiden</span>
+                                        button--default
+                                        button--bgcolor-lime 
+                                        button--border-no
+                                        flexbox">
+                            <span class="button__span"><img class="ic-fa-external-link--alone"></span>
+                            <span class="button__text">Till energiguiden</span>
                         </button>
                     </div>
                 </li>
+                <!-- 6 -->
                 <li class="grid grid--feature ">
                     <img class="grid--feature__icon
-                                ic-ion-ios-body"/>
-                    <div class="grid--feature__title">Lorem ipsum dolor sit amet, <strong>sea ut tale prompta oportere.</strong></div>
-                    <div class="grid--feature__description"> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
+                                ic-ion-ios-body
+                                ic--size-medium" />
+                    <div class="grid--feature__title flexbox flexbox--alignItems-center">
+                        <span>Loremsea ut<strong>portere.</strong></span>
+                    </div>
+                    <div class="grid--feature__description">
+                        <span>Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></span>
+                    </div>
+
                     <div class="grid--feature__additional">                        
                         <button class="button 
-                                button--custom-peoplebox
-                                button--padding-medium 
-                                button--bgcolor-lime
-                                button--border-no">
-                            <span class="button__span"><img class="ic-externallink-alone"></span>
-                            <span class="button__text">Energiguiden Energiguiden</span>
+                                        button--default
+                                        button--bgcolor-lime
+                                        button--border-no
+                                        flexbox">
+                            <span class="button__span"><img class="ic-fa-external-link--alone"></span>
+                            <span class="button__text">Kontagi amari</span>
                         </button>
                     </div>
-                </li>                
+                </li>
             </ul>            
         </div>
     </div>
@@ -212,28 +265,30 @@
                 bg-map">
         <!-- <div class="bg-map"> -->
             <div class="jumbotron
+                        jumbotron--map
                         jumbotron--overlaybg
                         jumbotron--rounded-border
                         flexbox
-                        flexbox--wrap">
+                        flexbox--flexDir-col
+                        flexbox--justifyContent-spaceAround">
                 <div class="jumbotron__topbar"><img class="ic-fa-close"></div>
                 <div class="jumbotron__title">
-                    <p><strong>Full koll med Energiporten</strong></p>
+                    <span><strong>Aktiva bostadsrattsforeginagar</strong></span>
                 </div>
                 <div class="jumbotron__text">
-                    <p><strong>Lorem idivsum dolor sit amet, sea ut tale prompta oportere.</strong> 
-                    Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. 
-                    Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. 
+                    <span><strong>Lorem idivsum dolor sit amet, sea ut tale prompta oportere.</strong> 
+                    Putent putant est eu, usu regione tor constituto pri. 
                     <strong>Eam te inani omnium dissentiunt.</strong>
-                    </p>
+                    </span>
+                </div>
                 <div class="jumbotron__action">
                     <button class="button 
-                                    button--custom-jumbo
-                                    button--padding-medium 
-                                    button--bgcolor-bluegray 
-                                    button--border-no">
-                        <span class="button__span"><img class="ic-building-alone"></span>
-                        <span class="button__text">Energiguiden Energiguiden</span>
+                                    button--default
+                                    button--bgcolor-black 
+                                    button--border-no
+                                    flexbox">
+                        <span class="button__span"><img class="ic-fa-user-plus--alone"></span>
+                        <span class="button__text">Skapa konto</span>
                     </button>
                 </div>
             </div>
@@ -241,11 +296,249 @@
     </div>
 
     <!-- Contact - Quick links -->
-    <div class="container">
-        <div>kappa 123</div>
+    <div class="container
+                container--quicklinks
+                bg-greygradient-darker">
+            <!-- Flexbox column direction split into 2 column -->
+            <div class="half-browser-width">
+                
+            </div>
+            <div class="flexbox
+                        flexbox--flexDir-col
+                        flexbox--wrap
+                        flexbox--quicklinks">
+                <!-- arrow down icon item -->
+                <ul class="flexbox 
+                            flexbox--wrap 
+                            flexbox--justifyContent-spaceBetween
+                            flexbox__items--vertical-2">
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                                    ic-ion-arrow-graph-down-right
+                                    ic--size-medium"/>
+                        <div class="grid--feature__title flexbox flexbox--alignItems-center">
+                            <span>Loremsea ut<strong>portere.</strong></span>
+                        </div>
+                        <div class="grid--feature__description--wide">
+                            <span>Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></span>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- list of offices -->
+                <ul class="flexbox
+                            flexbox--justifyContent-spaceBetween
+                            flexbox--flexDir-col
+                            flexbox__items--vertical-2
+                            flexbox--basis-half">
+                    <!-- 1 -->
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                                    ic-ion-arrow-graph-down-right
+                                    ic--size-medium"/>
+                                    
+                        <div class="grid--feature__title customCell">
+                            <div class="customCell__heading">
+                                <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                            </div>
+                            <div class="customCell__address">Roshanpitch 7</div>
+                            <div class="customCell__postcode">21746 Malmo</div>
+                        </div>
+                    </li>
+                    <!-- 2 -->
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                                    ic-ion-arrow-graph-down-right
+                                    ic--size-medium"/>
+                        <div class="grid--feature__title customCell">
+                            <div class="customCell__heading">
+                                <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                            </div>
+                            <div class="customCell__address">Roshanpitch 7</div>
+                            <div class="customCell__postcode">21746 Malmo</div>
+                        </div>
+                    </li>
+                    <!-- 3 -->
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                                    ic-ion-arrow-graph-down-right
+                                    ic--size-medium"/>
+                        <div class="grid--feature__title customCell">
+                            <div class="customCell__heading">
+                                <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                            </div>
+                            <div class="customCell__address">Roshanpitch 7</div>
+                            <div class="customCell__postcode">21746 Malmo</div>
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                            ic-ion-arrow-graph-down-right
+                            ic--size-medium"/>
+                        <div class="grid--feature__title customCell">
+                            <div class="customCell__heading">
+                                <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                            </div>
+                            <div class="customCell__address">Roshanpitch 7</div>
+                            <div class="customCell__postcode">21746 Malmo</div>
+                        </div>
+                    </li>
+                    <!-- 5 -->
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                            ic-ion-arrow-graph-down-right
+                            ic--size-medium"/>
+                        <div class="grid--feature__title customCell">
+                            <div class="customCell__heading">
+                                <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                            </div>
+                            <div class="customCell__address">Roshanpitch 7</div>
+                            <div class="customCell__postcode">21746 Malmo</div>
+                        </div>
+                    </li>
+                    <!-- 6 -->
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                            ic-ion-arrow-graph-down-right
+                            ic--size-medium"/>
+                        <div class="grid--feature__title customCell">
+                            <div class="customCell__heading">
+                                <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                            </div>
+                            <div class="customCell__address">Roshanpitch 7</div>
+                            <div class="customCell__postcode">21746 Malmo</div>
+                        </div>
+                    </li>
+                    <!-- 7 -->
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                            ic-ion-arrow-graph-down-right
+                            ic--size-medium"/>
+                        <div class="grid--feature__title customCell">
+                            <div class="customCell__heading">
+                                <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                            </div>
+                            <div class="customCell__address">Roshanpitch 7</div>
+                            <div class="customCell__postcode">21746 Malmo</div>
+                        </div>
+                    </li>
+                    <!-- 8 -->
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                            ic-ion-arrow-graph-down-right
+                            ic--size-medium"/>
+                        <div class="grid--feature__title customCell">
+                            <div class="customCell__heading">
+                                <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                            </div>
+                            <div class="customCell__address">Roshanpitch 7</div>
+                            <div class="customCell__postcode">21746 Malmo</div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- check list -->
+                <ul class="flexbox 
+                            flexbox--wrap 
+                            flexbox--justifyContent-spaceBetween
+                            flexbox__items--vertical-2">
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                            ic-fa-search
+                            ic--size-medium"/>
+                        <div class="grid--feature__title flexbox flexbox--alignItems-center">
+                            <span style="text-overflow: ellipsis">Lorem ipsum dolorfafeafewfsfsafsfd sit amet</span>
+                        </div>
+
+                        <div class="grid--feature__description--wide">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark">Kappa123</span>
+                            </label>
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark">Kappa123</span>
+                            </label>
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark">Kappa123</span>
+                            </label>
+                        </div>
+
+                        <div class="grid--feature__additional--wide">
+                            <button class="button 
+                                            button--default
+                                            button--bgcolor-bluegray 
+                                            button--border-no
+                                            flexbox">
+                                <span class="button__span"><img class="ic-fa-building--alone"></span>
+                                <span class="button__text">Sok</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <!-- additional features -->
+                <ul class="flexbox 
+                            flexbox--wrap 
+                            flexbox--justifyContent-spaceBetween
+                            flexbox__items--vertical-2">
+                    <li class="grid grid--feature ">
+                        <img class="grid--feature__icon
+                                    ic-mi-playlist-add-check
+                                    ic--size-medium"/>
+                        <div class="grid--feature__title flexbox flexbox--alignItems-center">
+                            <span>Lorem ipsum dolor sit amefsfasfdsafasfsaft</span>
+                        </div>
+
+                        <div class="grid--feature__description--wide">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+                        </div>
+
+                        <div class="grid--feature__additional--wide">
+                            <ol class="od-list">
+                                <li class="underline indent-2">Umbala</li>
+                                <li class="underline indent-2">ca rem</li>
+                                <li class="underline indent-2">xi muoi</li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </div>
     </div>
 
     <!-- Footer -->
+
+    <div class="container">
+        <div class="container--footer
+                    bg-greygradient-darker
+                    flexbox
+                    flexbox--wrap
+                    flexbox--justifyContent-spaceAround">
+            <div class="flexbox__items">
+                <h5>Genvagar</h5>
+                <p>Energiguiden</p>
+                <p>Energikolan</p>
+                <p>Behove du hjapl</p>
+                <p>Communer</p>
+                <p>Om Engeriporten</p>
+            </div>
+            <div class="flexbox__items">
+                <h5>Vill du</h5>
+                <p>Logga in?</p>
+                <p>Registrea koto?</p>
+            </div>
+            <div class="flexbox__items">
+                <h5>VI SOM STAR BAKKOM ENERGIPORTEN</h5>            
+                <div class="flexbox flexbox--wrap flexbox--justifyContent-spaceAround flexbox--logoes">
+                    <img class="logo logo--myscale1" src="/assets/images/logo1.png"/>
+                    <img class="logo logo--myscale1" src="/assets/images/logo2.jpg"/>
+                    <img class="logo logo--myscale2" src="/assets/images/logo3.png"/>
+                    <img class="logo logo--myscale2" src="/assets/images/logo4.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <br />
 

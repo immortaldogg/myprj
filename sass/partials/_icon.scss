@@ -1,0 +1,52 @@
+
+@import "helpers/variables";
+$ic-name-list: 'fa-bars', 'fa-building', 'fa-close', 'fa-exchange', 'fa-external-link', 'fa-lock', 
+                'fa-search', 'fa-user-plus', 'ion-android-people', 'ion-arrow-graph-down-right',
+                'ion-ios-body', 'mfglabs-chart',
+                'mi-navigate-before_white', 'mi-navigate-before', 'mi-navigate-next', 'mi-navigate-next_white',
+                'mi-playlist-add-check', 'mi-show-chart';
+
+%ic-default {        
+    display: inline;
+    // default size        
+    width: $small;
+    height: $small;
+}
+@each $name in $ic-name-list {    
+    .ic-#{$name} {
+        content:url("/assets/icons/#{$name}.png");
+        @extend %ic-default;
+        vertical-align: baseline;
+    }
+    .ic-#{$name}--alone {
+        content:url("/assets/icons/#{$name}.png");
+        @extend %ic-default;
+        vertical-align: text-bottom;
+    }
+}
+
+.ic {
+    &--size-medium {
+        width: $medium;
+        height: $medium;        
+    }
+
+    &--minimized {
+        @media screen and (max-width: $breakpoint) {
+            width: $small;
+            height: auto;
+        }
+    }
+
+    &--smallson {
+        @media screen and (max-width: $breakpoint) {
+            width: $tiny;
+            height: auto;
+        }
+    }
+
+    &--size-large {
+        width: $large;
+        height: $large;        
+    }
+}

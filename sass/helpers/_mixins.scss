@@ -50,42 +50,19 @@ $ic-name-list-36px: 'navigate-left', 'navigate-right', 'mi-show', 'android-peopl
     }
 }
 
-$bg-list: 'jumbotron', 'greygradient', 'greygradient-darker', 'map';
-@each $name in $bg-list {
-    .bg-#{$name} {
-        background: url("/assets/images/bg_#{$name}.jpg") no-repeat;        
-        @if $name == 'greygradient-darker' {
-            background-repeat: repeat;
-        }
-
-        background-size: 100% auto;
-        // height: $bg-jumbo-height;
-        @if $name != 'greygradient-darker' {
-            height: $bg-jumbo-height;
-        } @else {
-            height: auto;
-        }
-    }
-    .bg-#{$name}-small {
-        background: url("/assets/images/bg_#{$name}.jpg") no-repeat;
-        background-size: 50% auto;
-        height: $bg-jumbo-height/2;
-    }
-}
-
-@media screen and (max-width: $breakpoint) {
-    @each $name in $bg-list {
-        .bg-#{$name} {
-            background-size: auto;
-            background-repeat: repeat-y;
-            @if $name == 'jumbotron' {
-                height: $bg-jumbo-height;
-            } @else {
-                height: auto;
-            }
-        }
-    }
-}
+// @media screen and (max-width: $breakpoint) {
+//     @each $name in $bg-list {
+//         .bg-#{$name} {
+//             background-size: auto;
+//             background-repeat: repeat-y;
+//             @if $name == 'jumbotron' {
+//                 height: $bg-jumbo-height;
+//             } @else {
+//                 height: auto;
+//             }
+//         }
+//     }
+// }
 
 @for $i from 1 through 10 {
     .ml-#{$i} {

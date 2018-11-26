@@ -14,4 +14,20 @@
     &--rounded {
         border-radius: 50%;
     }
+
+    @media screen and (max-width: $breakpoint) {
+        margin: auto;
+    }
+}
+
+.logo {
+    margin: 2% 2%;
+    &--myscale1 {
+        width: 45%;
+        height: 45%;
+    }
+    &--myscale2 {
+        width: 100%;
+        height: auto;
+    }
 }

@@ -2,30 +2,45 @@
 .button {    
     border-radius: 3px;
 
-    //custom
-    &--custom-jumbo {
-        margin-right: 31px; 
+    // Customs
+    &--default {
+        margin-right: $small;
+        padding: 0px;
+
+        @media screen and (max-width: $breakpoint) {
+            margin-right: 0px;
+            margin-bottom: $small;
+        }
+    }
+    &--centerNeeded {
+        @media screen and (max-width: $breakpoint) {
+            margin: auto;
+        }
     }
 
-    &--custom-peoplebox {
-        
-    }
-
+    // Elements
     &__span {
         border-right: solid 1px $white;
-        font-size: $navbar_fontsize;    
+        font-size: $small;    
         
-        padding: $button-medium-padding;
-        padding-left: 0px;
+        padding: $tiny;
+        // padding-left: 0px;
+
+        @media screen and (max-width: $breakpoint) {
+        }
     }
 
     &__text {
-        font-size: $navbar_fontsize;
+        font-size: $small;
 
-        padding: $button-medium-padding;
-        padding-right: 0px;
+        padding: $tiny;
+        // padding-right: 0px;
+
+        @media screen and (max-width: $breakpoint) {     
+        }
     }
 
+    // Modifiers
     &--bgcolor-bluegray {
         background: $bluegray-500;        
         color: $white;
@@ -40,9 +55,21 @@
         background: $lime-500;        
         color: $white;
     }
+    &--bgcolor-brown {
+        background: $brown-500;
+        color: $white;
+    }
+    &--bgcolor-black {
+        background: $black;
+        color: $white;
+    }
 
-    &--padding-medium {
-        padding: $button-medium-padding;
+    &--padding-tiny {
+        padding: $tiny;
+    }
+
+    &--marginRight-small {
+        margin-right: $small;
     }
 
     &--border-no {

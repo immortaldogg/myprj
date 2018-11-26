@@ -1,0 +1,25 @@
+@import "helpers/variables";
+.mycheckbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: $navbar-fontsize;
+
+    // hide default checkbox
+    & input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}

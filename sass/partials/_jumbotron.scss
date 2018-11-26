@@ -1,13 +1,35 @@
 @import "helpers/variables";
 .jumbotron {
     // padding-top: 15%;
-    padding: 1.4%;
-    margin-right: 60%;
+    // padding: 1.4%;
+    // margin-right: 60%;
     // padding: 2%;
 
     // &--overlaybg {
     //     background
     // }
+
+    &--main {
+        padding: 1.4%;
+        margin-right: 60%;
+        height: 50rem;
+        @media screen and (max-width: $breakpoint) {
+            margin-right: 0%;
+            padding: 31% 1.4%;
+            height: 80rem;
+        }
+    }
+
+    &--map {
+        padding: 1.4%;
+        margin-right: 60%;
+        height: 50rem;
+        @media screen and (max-width: $breakpoint) {
+            margin-right: 0%;
+            padding: 4%;
+            height: 75rem;
+        }
+    }
 
     &__topbar {
         width: 100%;
@@ -16,13 +38,13 @@
     }
     
     &__title {
-        color: $black;
-        font-size: $navbar_fontsize * 2.3;
+        font-size: 4.5rem;
+        color: $white;
     }
 
     &__text {
-        color: $black;
-        font-size: $navbar_fontsize;
+        color: $white;
+        font-size: $small;
     }
     
     &__action {

@@ -1,17 +1,25 @@
 @import "helpers/variables";
 .peoplebox {
+
+    margin-left: 70px;
+
     &__quote {
         font-weight: bold;
-        font-size: $navbar_fontsize * 1.7;
+        font-size: $medium;
         color: $bluegray-500;
     }
     &__name {
         font-weight: bold;
-        font-size: $navbar_fontsize * 0.7;
+        font-size: ($small + $tiny)/2;
         color: $bluegray-500;
     }
     &__office {
-        font-size: $navbar_fontsize * 0.7;
+        font-size: ($small + $tiny)/2;
         color: $bluegray-500;
+    }
+
+    @media screen and (max-width: $breakpoint) {
+        text-align: center;
+        margin-left: 0px;
     }
 }

@@ -1,0 +1,40 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+
+.brand {
+    @include img_background($energy_logo_path);
+    width: 250px;
+    min-height: 36px;
+
+    @media screen and (max-width: $breakpoint) {
+        width: 250px /4 * 3;
+        min-height: 36px /4 *3;
+    }
+}
+
+.navlink {
+    display: inline;
+    margin: auto;
+    margin-right: 5rem;
+    font-size: 3rem;
+    color: $white;
+
+    @media screen and (max-width: $breakpoint) {
+        display: none;
+        margin-right: 1rem;
+        &.navlink--notHiddenAtBreakpoint {
+            display: block;
+        }
+    }
+}
+
+.version {
+    font-size: 2rem;
+    background-color: $orange-500;
+    color: $white;
+    padding: 2px 9px;
+
+    @media screen and (max-width: $breakpoint) {
+        font-size: 1.5rem;
+    }
+}

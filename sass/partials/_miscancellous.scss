@@ -6,7 +6,7 @@
     float: right;
 }
 
-.d-inline {
+.inline {
     display: inline;
 }
 
@@ -34,4 +34,24 @@
 
 .bg-white {
     background: $white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.indent-2 {
+    text-indent: 0.2em;
+}
+
+.od-list {
+    color: $white;
+    margin: 0px 0px;
+    padding: 0px 3rem;
+}
+
+.ul--style-removed {
+    list-style-type: none;
+    margin: 0px 0px;
+    padding: 0px;
 }

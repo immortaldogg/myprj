@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="/css/main.css">
 <link rel="stylesheet" href="/css/normalize.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     /* Create a Parallax Effect */
     /* .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -37,68 +36,68 @@
 <body>
     <!-- Sticky navigation bar -->
     <div class="container
-                container--position-fixed">
-        <div class="flexbox 
-                    flexbox--justifyContent-spaceBetween">
-            <div class = "flexbox 
-                            flexbox--flexDir-col 
-                            flexbox--alignItems-flexEnd">
-                <div class="brand"></div>
-                <div class="version">Betaversion 1.0</div>
-            </div>
-            <ul class = "flexbox
-                            flexbox--navlinks
-                            flexbox--flexDir-row
-                            flexbox--justifyContent-flexEnd
-                            ul--style-removed">
-                <li class="navlink 
-                            navlink--notHiddenAtBreakpoint">
-                    <form class="inline">
-                        <label class="label label--transparent"><img class="ic-fa-search--alone"/></label>
-                        <input class="input input--transparent" type="search" placeholder="Sok"/>
-                    </form>
-                </li>
-                <li class="navlink">Energiguiden</li>
-                <li class="navlink">Energiskolan</li>
-                <li class="navlink">Jamfor</li>
-                <li class="navlink bold"><img class="ic-fa-lock"/>&nbsp;&nbsp;&nbsp;Logga in</li>
-                <li class="navlink bold"><img class="ic-fa-user-plus"/>&nbsp;&nbsp;&nbsp;Skapa konto</li>
-                <li class="navlink navlink--notHiddenAtBreakpoint bold"><img class="ic-fa-bars--alone"/></li>
-            </ul>
+                container--navigation
+                container--position-fixed
+                container--overlaybg
+                flexbox 
+                flexbox--justtify-content-space-between">
+        <div class = "flexbox 
+                        flexbox--direction-col 
+                        flexbox--align-items-flex-end">
+            <div class="brand"></div>
+            <div class="version">Betaversion 1.0</div>
         </div>
+        <ul class = "flexbox
+                        flexbox--navlinks
+                        flexbox--justtify-content-flex-end
+                        ul--style-removed">
+            <li class="navlink 
+                        navlink--not-hidden">
+                <form class="inline">
+                    <label class="label label--transparent"><img class="ic-fa-search--alone size-225"/></label>
+                    <input class="input input--transparent" type="search" placeholder="Sok"/>
+                </form>
+            </li>
+            <li class="navlink">Energiguiden</li>
+            <li class="navlink">Energiskolan</li>
+            <li class="navlink">Jamfor</li>
+            <li class="navlink bold"><img class="ic-fa-lock"/>&nbsp;&nbsp;&nbsp;Logga in</li>
+            <li class="navlink bold"><img class="ic-fa-user-plus"/>&nbsp;&nbsp;&nbsp;Skapa konto</li>
+            <li class="navlink navlink--not-hidden bold"><img class="ic-fa-bars--alone"/></li>
+        </ul>
     </div>
 
     <!-- Jumbotron main  -->
     <div class="container
                 container--main
                 bg-jumbotron">
-        <!-- <div class="bg-jumbotron"> -->
-            <div class="jumbotron--main
-                        flexbox
-                        flexbox--flexDir-col
-                        flexbox--justifyContent-spaceAround">
-                <div class="jumbotron__title">Full koll med Energiporten</div>
-                <div class="jumbotron__text"><strong>Lorem ipsum dolor sit amet, sea ut tale prompta oportere.</strong> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
-                <div class="flexbox flexbox--justifyContent-flexStart flexbox--wrap">
-                    <button class="button 
-                            button--default
-                            button--bgcolor-bluegray 
-                            button--border-no
-                            flexbox">
-                        <span class="button__span"><img class="ic-fa-external-link--alone"/></span>
-                        <span class="button__text">Energiguiden Energiguiden</span>
-                    </button>
-                    <button class="button 
-                            button--default
-                            button--bgcolor-bluegray 
-                            button--border-no
-                            flexbox">
-                        <span class="button__span"><img class="ic-fa-building--alone"></span>
-                        <span class="button__text">Energiguiden Energiguiden</span>
-                    </button>
-                </div>
+        <div class="jumbotron
+                    jumbotron--main
+                    flexbox
+                    flexbox--direction-col
+                    flexbox--justtify-content-flex-start">
+            <div class="jumbotron__title jumbotron__title--color-black">Full koll med Energiporten</div>
+            <div class="jumbotron__text jumbotron__text--color-black"><strong>Lorem ipsum dolor sit amet, sea ut tale prompta oportere.</strong> Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></div>
+            <div class="flexbox flexbox--justtify-content-flex-start flexbox--wrap">
+                <button class="button 
+                                button--default
+                                button--bgcolor-fade 
+                                button--border-no
+                                button--disabled
+                                flexbox" disabled>
+                    <span class="button__span"><img class="ic-fa-external-link--alone"/></span>
+                    <span class="button__text">Energiguiden Energiguiden</span>
+                </button>
+                <button class="button 
+                                button--default
+                                button--bgcolor-fade 
+                                button--border-no
+                                flexbox">
+                    <span class="button__span"><img class="ic-fa-building--alone"></span>
+                    <span class="button__text">Energigfieab Foragniga</span>
+                </button>
             </div>
-        <!-- </div> -->
+        </div>
     </div>
 
     <!-- Quote carousel -->
@@ -107,9 +106,8 @@
                 bg-white">
         <div class="flexbox 
                     flexbox--nowrap
-                    flexbox--flexDir-row
-                    flexbox--justifyContent-spaceBetween
-                    flexbox--alignItems-center">
+                    flexbox--justtify-content-space-between
+                    flexbox--align-items-center">
             <!-- arrow left -->
             <img class="flexbox__items 
                         ic-mi-navigate-before 
@@ -119,29 +117,29 @@
             <div class="flexbox__items--grow
                         flexbox 
                         flexbox--wrap
-                        flexbox--alignItems-center">
+                        flexbox--align-items-center">
                 <img src="/assets/images/avatar_girl1.jpg" 
                      class="avatar 
                             avatar--rounded 
                             avatar--size-medium"/>
                 <div class="peoplebox">
-                    <p class="peoplebox__quote ">
-                        <q class="quote--emdash">Drifting away like a feather in air!</q>
-                    </p>
-                    <p class="peoplebox__name">
+                    <div class="peoplebox__quote ">
+                        <q class="quote--emdash">Bättre en fågel i handen än tio i skogen.</q>
+                    </div>
+                    <div class="peoplebox__name">
                         Jessica Boomerang Shooting Gun Bang Bang
-                    </p>
-                    <p class="peoplebox__office">
+                    </div>
+                    <div class="peoplebox__office">
                         BRF CYKELN 10 - Malmo
-                    </p>
+                    </div>
                     <button class="button 
                             button--default
-                            button--centerNeeded
-                            button--bgcolor-cyan
+                            button--margin-auto-bp
+                            button--bgcolor-skyblue
                             button--border-no
                             flexbox">
                         <span class="button__span"><img class="ic-fa-building--alone"></span>
-                        <span class="button__text">Energiguiden Energiguiden</span>
+                        <span class="button__text">Kika in till oss</span>
                     </button>
                 </div>
             </div>
@@ -158,7 +156,7 @@
                 container--features
                 bg-greygradient-darker">
             <ul class="flexbox
-                        flexbox--justifyContent-spaceBetween
+                        flexbox--justtify-content-space-between
                         flexbox--wrap
                         ul--style-removed">                
                 <!-- 1 -->
@@ -166,8 +164,8 @@
                     <img class="grid__icon
                                 ic-fa-exchange
                                 ic--size-medium" />
-                    <div class="grid__title flexbox flexbox--alignItems-center">
-                        <span>Loremsea ut<strong>portere.</strong></span>
+                    <div class="grid__title flexbox flexbox--align-items-center">
+                        <span>Loremsea ut sea ut seafood kappa octopus christiano ronaldo<strong>portere.</strong> av varandra och <strong>jamfor</strong></span>
                     </div>
                     <div class="grid__description">
                         <span>Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></span>
@@ -178,8 +176,8 @@
                     <img class="grid__icon
                                 ic-ion-android-people
                                 ic--size-medium" />
-                    <div class="grid__title flexbox flexbox--alignItems-center">
-                        <span>Loremsea ut<strong>portere.</strong></span>
+                    <div class="grid__title flexbox flexbox--align-items-center">
+                        <span>Loremsea ut nkremka abaslardar omega alpha mega<strong>nu pa ca chi.</strong></span>
                     </div>
                     <div class="grid__description">
                         <span>Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></span>
@@ -190,7 +188,7 @@
                     <img class="grid__icon
                                 ic-mi-show-chart
                                 ic--size-medium" />
-                    <div class="grid__title flexbox flexbox--alignItems-center">
+                    <div class="grid__title flexbox flexbox--align-items-center">
                         <span>Loremsea ut<strong>portere.</strong></span>
                     </div>
                     <div class="grid__description">
@@ -202,7 +200,7 @@
                     <img class="grid__icon
                                 ic-mfglabs-chart
                                 ic--size-medium" />
-                    <div class="grid__title flexbox flexbox--alignItems-center">
+                    <div class="grid__title flexbox flexbox--align-items-center">
                         <span>Loremsea ut<strong>portere.</strong></span>
                     </div>
                     <div class="grid__description">
@@ -214,7 +212,7 @@
                     <img class="grid__icon
                                 ic-mi-playlist-add-check
                                 ic--size-medium" />
-                    <div class="grid__title flexbox flexbox--alignItems-center">
+                    <div class="grid__title flexbox flexbox--align-items-center">
                         <span>Loremsea ut<strong>portere.</strong></span>
                     </div>
                     <div class="grid__description">
@@ -224,7 +222,7 @@
                     <div class="grid__additional">                        
                         <button class="button 
                                         button--default
-                                        button--bgcolor-lime 
+                                        button--bgcolor-autumn 
                                         button--border-no
                                         flexbox">
                             <span class="button__span"><img class="ic-fa-external-link--alone"></span>
@@ -237,7 +235,7 @@
                     <img class="grid__icon
                                 ic-ion-ios-body
                                 ic--size-medium" />
-                    <div class="grid__title flexbox flexbox--alignItems-center">
+                    <div class="grid__title flexbox flexbox--align-items-center">
                         <span>Loremsea ut<strong>portere.</strong></span>
                     </div>
                     <div class="grid__description">
@@ -247,7 +245,7 @@
                     <div class="grid__additional">                        
                         <button class="button 
                                         button--default
-                                        button--bgcolor-lime
+                                        button--bgcolor-autumn
                                         button--border-no
                                         flexbox">
                             <span class="button__span"><img class="ic-fa-external-link--alone"></span>
@@ -263,36 +261,34 @@
     <div class="container 
                 container--map
                 bg-map">
-        <!-- <div class="bg-map"> -->
-            <div class="jumbotron
-                        jumbotron--map
-                        jumbotron--overlaybg
-                        jumbotron--rounded-border
-                        flexbox
-                        flexbox--flexDir-col
-                        flexbox--justifyContent-spaceAround">
-                <div class="jumbotron__topbar"><img class="ic-fa-close"></div>
-                <div class="jumbotron__title">
-                    <span><strong>Aktiva bostadsrattsforeginagar</strong></span>
-                </div>
-                <div class="jumbotron__text">
-                    <span><strong>Lorem idivsum dolor sit amet, sea ut tale prompta oportere.</strong> 
-                    Putent putant est eu, usu regione tor constituto pri. 
-                    <strong>Eam te inani omnium dissentiunt.</strong>
-                    </span>
-                </div>
-                <div class="jumbotron__action">
-                    <button class="button 
-                                    button--default
-                                    button--bgcolor-black 
-                                    button--border-no
-                                    flexbox">
-                        <span class="button__span"><img class="ic-fa-user-plus--alone"></span>
-                        <span class="button__text">Skapa konto</span>
-                    </button>
-                </div>
+        <div class="jumbotron
+                    jumbotron--map
+                    jumbotron--overlaybg
+                    jumbotron--rounded-border
+                    flexbox
+                    flexbox--direction-col
+                    flexbox--justtify-content-flex-start">
+            <div class="jumbotron__topbar"><img class="ic-fa-close"></div>
+            <div class="jumbotron__title jumbotron__title--color-white">
+                <span><strong>Aktiva bostadsrattsforeginagar</strong></span>
             </div>
-        <!-- </div> -->
+            <div class="jumbotron__text jumbotron__text--color-white">
+                <span><strong>Lorem idivsum dolor sit amet, sea ut tale prompta oportere.</strong> 
+                Putent putant est eu, usu regione tor constituto pri. 
+                <strong>Eam te inani omnium dissentiunt.</strong>
+                </span>
+            </div>
+            <div class="jumbotron__action">
+                <button class="button 
+                                button--default
+                                button--bgcolor-black 
+                                button--border-no
+                                flexbox">
+                    <span class="button__span"><img class="ic-fa-user-plus size-225"></span>
+                    <span class="button__text">Skapa konto</span>
+                </button>
+            </div>
+        </div>
     </div>
 
     <!-- Contact - Quick links -->   
@@ -305,14 +301,17 @@
                 flexbox--wrap">
         <!-- first half -->
         <div class="flexbox__items--basis-half
-                    flexbox__items--width-half">
+                    flexbox__items--width-half
+                    flexbox
+                    flexbox--direction-col
+                    border-box">
             <!-- arrow down icon item -->
             <div class="grid grid--feature-block ">
                 <img class="grid__icon
                             ic-ion-arrow-graph-down-right
                             ic--size-medium"/>
-                <div class="grid__title flexbox flexbox--alignItems-center">
-                    <span>Loremsea ut<strong>portere.</strong></span>
+                <div class="grid__title">
+                    <span class="center-text">Energifekktiva Bostadraddfogressignridbikachuiniar</span>
                 </div>
                 <div class="grid__description--wide">
                     <span>Putent putant est eu, usu regione torquatos democritum in. Mea liber nullam id, prompta dolorum vix ad, his ornatus indoctum ei. Sea tempor deseruisse moderatius at, te augue maiorum constituto pri. <strong>Eam te inani omnium dissentiunt.</strong></span>
@@ -320,114 +319,121 @@
             </div>
             <!-- list of offices -->
             <ul class="flexbox
-                        flexbox--justifyContent-spaceBetween
-                        flexbox--flexDir-col
-                        flexbox__items--vertical-2
+                        flexbox--justtify-content-space-between
+                        flexbox--direction-col
                         flexbox--basis-half
                         ul--style-removed">
                 <!-- 1 -->
                 <li class="grid grid--feature-block ">
                     <img class="grid__icon
-                                ic-ion-arrow-graph-down-right
+                                grid__icon--bgcolor-lightgrey
+                                ic-mi-explore
                                 ic--size-medium"/>
                                 
-                    <div class="grid__title customCell">
-                        <div class="customCell__heading">
-                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                    <div class="grid__title custom-cell">
+                        <div class="custom-cell__heading">
+                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone size-300"/>
                         </div>
-                        <div class="customCell__address">Roshanpitch 7</div>
-                        <div class="customCell__postcode">21746 Malmo</div>
+                        <div class="custom-cell__address">Roshanpitch 7</div>
+                        <div class="custom-cell__postcode">21746 Malmo</div>
                     </div>
                 </li>
                 <!-- 2 -->
                 <li class="grid grid--feature-block ">
                     <img class="grid__icon
-                                ic-ion-arrow-graph-down-right
+                                grid__icon--bgcolor-lightgrey
+                                ic-mi-explore
                                 ic--size-medium"/>
-                    <div class="grid__title customCell">
-                        <div class="customCell__heading">
-                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                    <div class="grid__title custom-cell">
+                        <div class="custom-cell__heading">
+                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white size-300"/>
                         </div>
-                        <div class="customCell__address">Roshanpitch 7</div>
-                        <div class="customCell__postcode">21746 Malmo</div>
+                        <div class="custom-cell__address">Roshanpitch 7</div>
+                        <div class="custom-cell__postcode">21746 Malmo</div>
                     </div>
                 </li>
                 <!-- 3 -->
                 <li class="grid grid--feature-block ">
                     <img class="grid__icon
-                                ic-ion-arrow-graph-down-right
+                                grid__icon--bgcolor-lightgrey
+                                ic-mi-explore
                                 ic--size-medium"/>
-                    <div class="grid__title customCell">
-                        <div class="customCell__heading">
-                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                    <div class="grid__title custom-cell">
+                        <div class="custom-cell__heading">
+                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white size-300"/>
                         </div>
-                        <div class="customCell__address">Roshanpitch 7</div>
-                        <div class="customCell__postcode">21746 Malmo</div>
+                        <div class="custom-cell__address">Roshanpitch 7</div>
+                        <div class="custom-cell__postcode">21746 Malmo</div>
                     </div>
                 </li>
                 <!-- 4 -->
                 <li class="grid grid--feature-block ">
                     <img class="grid__icon
-                        ic-ion-arrow-graph-down-right
-                        ic--size-medium"/>
-                    <div class="grid__title customCell">
-                        <div class="customCell__heading">
-                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                                grid__icon--bgcolor-lightgrey
+                                ic-mi-explore
+                                ic--size-medium"/>
+                    <div class="grid__title custom-cell">
+                        <div class="custom-cell__heading">
+                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white size-300"/>
                         </div>
-                        <div class="customCell__address">Roshanpitch 7</div>
-                        <div class="customCell__postcode">21746 Malmo</div>
+                        <div class="custom-cell__address">Roshanpitch 7</div>
+                        <div class="custom-cell__postcode">21746 Malmo</div>
                     </div>
                 </li>
                 <!-- 5 -->
                 <li class="grid grid--feature-block ">
                     <img class="grid__icon
-                        ic-ion-arrow-graph-down-right
-                        ic--size-medium"/>
-                    <div class="grid__title customCell">
-                        <div class="customCell__heading">
-                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                                grid__icon--bgcolor-lightgrey
+                                ic-mi-explore
+                                ic--size-medium"/>
+                    <div class="grid__title custom-cell">
+                        <div class="custom-cell__heading">
+                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white size-300"/>
                         </div>
-                        <div class="customCell__address">Roshanpitch 7</div>
-                        <div class="customCell__postcode">21746 Malmo</div>
+                        <div class="custom-cell__address">Roshanpitch 7</div>
+                        <div class="custom-cell__postcode">21746 Malmo</div>
                     </div>
                 </li>
                 <!-- 6 -->
                 <li class="grid grid--feature-block ">
                     <img class="grid__icon
-                        ic-ion-arrow-graph-down-right
-                        ic--size-medium"/>
-                    <div class="grid__title customCell">
-                        <div class="customCell__heading">
-                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                                grid__icon--bgcolor-lightgrey
+                                ic-mi-explore
+                                ic--size-medium"/>
+                    <div class="grid__title custom-cell">
+                        <div class="custom-cell__heading">
+                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white size-300"/>
                         </div>
-                        <div class="customCell__address">Roshanpitch 7</div>
-                        <div class="customCell__postcode">21746 Malmo</div>
+                        <div class="custom-cell__address">Roshanpitch 7</div>
+                        <div class="custom-cell__postcode">21746 Malmo</div>
                     </div>
                 </li>
                 <!-- 7 -->
                 <li class="grid grid--feature-block ">
-                    <img class="grid__icon
-                        ic-ion-arrow-graph-down-right
-                        ic--size-medium"/>
-                    <div class="grid__title customCell">
-                        <div class="customCell__heading">
-                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                    <img class="grid__icon                                 
+                                grid__icon--bgcolor-lightgrey
+                                ic-mi-explore
+                                ic--size-medium"/>
+                    <div class="grid__title custom-cell">
+                        <div class="custom-cell__heading">
+                            <span>BRF Kvarteret Ostergard</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white size-300"/>
                         </div>
-                        <div class="customCell__address">Roshanpitch 7</div>
-                        <div class="customCell__postcode">21746 Malmo</div>
+                        <div class="custom-cell__address">Soda Bulldog 25:29</div>
+                        <div class="custom-cell__postcode">21222 Malmo</div>
                     </div>
                 </li>
                 <!-- 8 -->
                 <li class="grid grid--feature-block ">
                     <img class="grid__icon
-                        ic-ion-arrow-graph-down-right
-                        ic--size-medium"/>
-                    <div class="grid__title customCell">
-                        <div class="customCell__heading">
-                            <span>BRF Ingrid</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white--alone ic--size-medium"/>
+                                grid__icon--bgcolor-lightgrey
+                                ic-mi-explore_gold
+                                ic--size-medium"/>
+                    <div class="grid__title custom-cell">
+                        <div class="custom-cell__heading">
+                            <span>BRF Sjuettan</span>&nbsp;&nbsp;&nbsp;<img class="ic-mi-navigate-next_white size-300"/>
                         </div>
-                        <div class="customCell__address">Roshanpitch 7</div>
-                        <div class="customCell__postcode">21746 Malmo</div>
+                        <div class="custom-cell__address">Mollevastorage 7</div>
+                        <div class="custom-cell__postcode">21746 Malmo</div>
                     </div>
                 </li>
             </ul>   
@@ -435,30 +441,53 @@
         </div>
         <!-- second half -->
         <div class="flexbox__items--basis-half
-                    flexbox__items--width-half">
+                    flexbox__items--width-half
+                    flexbox
+                    flexbox--direction-col
+                    border-box">
             <!-- check list -->
             <div class="grid grid--feature-block ">
                 <img class="grid__icon
                     ic-fa-search
                     ic--size-medium"/>
-                <div class="grid__title flexbox flexbox--alignItems-center">
-                    <span style="text-overflow: ellipsis">Lorem ipsum dolorfafeafewfsfsafsfd sit amet</span>
+                <div class="grid__title ellipsis">
+                    <span class="center-text">Lorem ipsum dolorfafeafewfsfsafsfd sit amet</span>
                 </div>
 
                 <div class="grid__description--wide">
-                    <label class="w3checkbox">One
+                    <label class="w3checkbox">OneOneOneOneOneOneOneOne
                         <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="w3checkbox">Two
+                    <label class="w3checkbox">TwoTwoTwoTwoTwoTwoTwoTwo
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="w3checkbox">Three
+                    <label class="w3checkbox">ThreeThreeThreeThreeThreeThree
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="w3checkbox">Four
+                    <label class="w3checkbox">FourFourFourFourFourFourFour
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="w3checkbox">fivefivefivefivefivefivefive
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="w3checkbox">sixsixsixsixsixsixsix
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="w3checkbox">sevensevensevensevenseven
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="w3checkbox">eighteighteighteighteight
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="w3checkbox">NEINNEINNEINNEINNEINNEIN
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
@@ -480,7 +509,7 @@
                 <img class="grid__icon
                             ic-mi-playlist-add-check
                             ic--size-medium"/>
-                <div class="grid__title flexbox flexbox--alignItems-center">
+                <div class="grid__title flexbox flexbox--align-items-center">
                     <span>Lorem ipsum dolor sit amefsfasfdsafasfsaft</span>
                 </div>
 
@@ -490,9 +519,10 @@
 
                 <div class="grid__additional--wide">
                     <ol class="od-list">
-                        <li class="underline indent-2">Umbala</li>
-                        <li class="underline indent-2">ca rem</li>
-                        <li class="underline indent-2">xi muoi</li>
+                        <li class="underline indent-2">oafish belligerent</li>
+                        <li class="underline indent-2">superb remmass</li>
+                        <li class="underline indent-2">masscontinue stomachinconclusive</li>
+                        <li class="underline indent-2">fillntinue stfillnconclusive</li>
                     </ol>
                 </div>
             </div>
@@ -506,23 +536,24 @@
                     bg-greygradient-darker
                     flexbox
                     flexbox--wrap
-                    flexbox--justifyContent-spaceAround">
-            <div class="flexbox__items">
-                <h5>Genvagar</h5>
-                <p>Energiguiden</p>
-                <p>Energikolan</p>
-                <p>Behove du hjapl</p>
-                <p>Communer</p>
-                <p>Om Engeriporten</p>
+                    flexbox--justtify-content-space-around
+                    flexbox--footer">
+            <div class="footer-box">
+                <div class="footer-box__head-link">Genvagar</div>
+                <div class="footer-box__link"><span>Energiguiden&nbsp;<img class="ic-mi-navigate-next_white size-225"></span></div>
+                <div class="footer-box__link"><span>Energikolan&nbsp;<img class="ic-mi-navigate-next_white size-225"></span></div>
+                <div class="footer-box__link"><span>Behove du hjapl&nbsp;<img class="ic-mi-navigate-next_white size-225"></span></div>
+                <div class="footer-box__link"><span>Communer&nbsp;<img class="ic-mi-navigate-next_white size-225"></span></div>
+                <div class="footer-box__link"><span>Om Engeriporten&nbsp;<img class="ic-mi-navigate-next_white size-225"></span></div>
             </div>
-            <div class="flexbox__items">
-                <h5>Vill du</h5>
-                <p>Logga in?</p>
-                <p>Registrea koto?</p>
+            <div class="footer-box">
+                <div class="footer-box__head-link">Vill du</div>
+                <div class="footer-box__link"><span>Logga in?&nbsp;<img class="ic-mi-navigate-next_white size-225"></span></div>
+                <div class="footer-box__link"><span>Registrea koto?&nbsp;<img class="ic-mi-navigate-next_white size-225"></span></div>
             </div>
-            <div class="flexbox__items">
-                <h5>VI SOM STAR BAKKOM ENERGIPORTEN</h5>            
-                <div class="flexbox flexbox--wrap flexbox--justifyContent-spaceAround flexbox--logoes">
+            <div class="footer-box">
+                <div class="footer-box__head-link">VI SOM STAR BAKKOM ENERGIPORTEN</div>
+                <div class="flexbox flexbox--wrap flexbox--justtify-content-space-around flexbox--logoes">
                     <img class="logo logo--myscale1" src="/assets/images/logo1.png"/>
                     <img class="logo logo--myscale1" src="/assets/images/logo2.jpg"/>
                     <img class="logo logo--myscale2" src="/assets/images/logo3.png"/>

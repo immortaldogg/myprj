@@ -11,7 +11,7 @@
 
     &--main {
         padding: 1.4%;
-        margin-right: 60%;
+        margin-right: 40%;
         height: 50rem;
         @media screen and (max-width: $breakpoint) {
             margin-right: 0%;
@@ -22,12 +22,14 @@
 
     &--map {
         padding: 1.4%;
+        padding-left: 2.5%;
+        padding-bottom: 2.5%;
         margin-right: 60%;
-        height: 50rem;
+        height: auto;
         @media screen and (max-width: $breakpoint) {
             margin-right: 0%;
             padding: 4%;
-            height: 75rem;
+            height: auto;
         }
     }
 
@@ -35,16 +37,34 @@
         width: 100%;
         text-align: right;
         float: right;
+
+        margin-bottom: 1rem;
     }
     
     &__title {
-        font-size: 4.5rem;
-        color: $white;
+        font-size: 4rem;
+        font-weight: bold;
+        
+        &--color-white {
+            color: #fff;
+        }
+        &--color-black {
+            color: #000;
+        }
+
+        margin-bottom: 4rem;
     }
 
     &__text {
-        color: $white;
-        font-size: $small;
+        font-size: 2.5rem;
+        &--color-white {
+            color: #fff;
+        }
+        &--color-black {
+            color: #000;
+        }
+        
+        margin-bottom: 4rem;
     }
     
     &__action {

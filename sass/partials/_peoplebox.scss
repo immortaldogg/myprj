@@ -5,17 +5,20 @@
 
     &__quote {
         font-weight: bold;
-        font-size: $medium;
+        font-size: $medium;        
         color: $bluegray-500;
+        margin-bottom: 3rem;
     }
     &__name {
         font-weight: bold;
         font-size: ($small + $tiny)/2;
         color: $bluegray-500;
+        margin-bottom: 1.5rem;
     }
     &__office {
         font-size: ($small + $tiny)/2;
         color: $bluegray-500;
+        margin-bottom: 1.5rem;
     }
 
     @media screen and (max-width: $breakpoint) {

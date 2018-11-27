@@ -4,31 +4,61 @@ $ic-name-list: 'fa-bars', 'fa-building', 'fa-close', 'fa-exchange', 'fa-external
                 'fa-search', 'fa-user-plus', 'ion-android-people', 'ion-arrow-graph-down-right',
                 'ion-ios-body', 'mfglabs-chart',
                 'mi-navigate-before_white', 'mi-navigate-before', 'mi-navigate-next', 'mi-navigate-next_white',
-                'mi-playlist-add-check', 'mi-show-chart';
+                'mi-playlist-add-check', 'mi-show-chart', 'mi-explore', 'mi-explore_gold';
 
 %ic-default {        
     display: inline;
     // default size        
-    width: $small;
-    height: $small;
+    width: 2rem;
+    height: 2rem;
 }
 @each $name in $ic-name-list {    
     .ic-#{$name} {
         content:url("/assets/icons/#{$name}.png");
         @extend %ic-default;
-        vertical-align: baseline;
+        vertical-align: middle;
+
+        &.size-225 {
+            width: 2.25rem;
+            height: 2.25rem;
+        }
+
+        &.size-300 {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        &.size-500 {
+            width: 5rem;
+            height: 5rem;
+        }
     }
     .ic-#{$name}--alone {
         content:url("/assets/icons/#{$name}.png");
         @extend %ic-default;
         vertical-align: text-bottom;
+
+        &.size-225 {
+            width: 2.25rem;
+            height: 2.25rem;
+        }
+
+        &.size-300 {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        &.size-500 {
+            width: 5rem;
+            height: 5rem;
+        }
     }
 }
 
 .ic {
     &--size-medium {
-        width: $medium;
-        height: $medium;        
+        width: 4rem;
+        height: 4rem;        
     }
 
     &--minimized {

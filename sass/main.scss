@@ -6,7 +6,7 @@
 // @import "partials/navigation";
 
 @import "partials/containers";
-@import "partials/standalone";
+@import "partials/link";
 @import "partials/flexbox";
 @import "partials/forms";
 @import "partials/jumbotron";
@@ -16,55 +16,3 @@
 @import "partials/peoplebox";
 @import "partials/grid";
 @import "partials/checkbox";
-
-@media screen and (max-width: $breakpoint) {
-
-    .button {
-        &--custom-jumbo {
-            margin-top: 25px;
-        }
-        &--custom-peoplebox {
-            margin: auto;
-        }
-
-        // &__text {
-        //     padding: 0px;
-        //     font-size: initial;
-        // }
-    }
-
-    .grid {
-        &--feature {
-            flex-basis: 100%;
-            flex-shrink: 0;
-            flex-grow: 0;
-
-            margin-bottom: 25px;
-        }
-    }
-
-    .flexbox {
-        // &--custom-features {
-        //     padding: 10px;
-        //     padding-top: 30px;
-        // }
-        &--custom-quicklinks {
-            height: auto;
-        }
-        &__items {
-            &--vertical-2 {
-                width: 100%;
-            }
-        }
-    }
-}
-
-@mixin test($param){
-	&.xyz {
-        padding: $param;
-    }
-}
-
-.abc {
-    @include test(5px);
-}

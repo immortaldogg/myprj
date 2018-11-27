@@ -2,6 +2,12 @@
     display: block;
 
     // custom
+    &--navigation {
+        padding: 1.5rem 3rem;
+        @media screen and (max-width:$breakpoint) {
+            padding: 2%;
+        }        
+    }
     &--map {
         padding: 12% 5%;
         @media screen and (max-width: $breakpoint) {
@@ -37,13 +43,20 @@
     }
 
     &--footer {
-        padding: 2% 17%;
+        padding: 2% 14%;
+        @media screen and (max-width: $breakpoint) {
+            padding: 5% 8%;            
+        }
+    }
+
+    &--overlaybg {
+        background: rgba($bluegray-500, 0.6)
     }
 
     // modifiers
     &--position-fixed {
         position: fixed;
-        width: 100vw;
+        width: 98vw;
         top: 0;
     }
 
@@ -73,13 +86,13 @@ $bg-list: 'jumbotron', 'greygradient', 'greygradient-darker', 'map';
         background: url("/assets/images/bg_#{$name}.jpg") no-repeat;
         background-size: cover;
         height: auto;
-        @if $name == "jumbotron" {height: 100rem;}
-        @if $name == "map" {height: 100rem;}
+        @if $name == "jumbotron" {height: 90rem;}
+        @if $name == "map" {height: 90rem;}
         
         @media screen and (max-width: $breakpoint) {
             height: auto;
-            // @if $name == "jumbotron" {height: 100rem;}
-            @if $name == "map" {height: 100rem;}
+            // @if $name == "jumbotron" {height: 90rem;}
+            @if $name == "map" {height: 90rem;}
         }
     }
 }

@@ -2,32 +2,36 @@
 
 %grid-default {
     grid-template-columns: 9rem auto;
-        grid-template-rows: auto;      
-        
-        grid-column-gap: $small;
-        grid-row-gap: $small;
-        
-        margin-bottom: $large;
+    grid-template-rows: auto;      
+    
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    
+    margin-bottom: $large;
 
-        box-sizing: border-box;
+    box-sizing: border-box;
 }
 .grid {
     display: grid;
     &--feature {        
         @extend %grid-default;
         
-        width: 120rem;
+        width: 40%;
         @media screen and (max-width: $breakpoint) {
-            width: 100%;
+            grid-template-columns: 9rem auto;
+            width: 100vw;
+            flex-basis: unset;
+            margin-bottom: 25px;
         }        
     }
 
     &--feature-block {
         @extend %grid-default;
 
-        width: 100%;
+        width: 70%;
         @media screen and (max-width: $breakpoint) {
-            width: 100vw;
+            grid-template-columns: 9rem auto;
+            width: 100%;
         }        
     }
 
@@ -35,23 +39,25 @@
         grid-area: 1/1/1/1;
 
         border-radius: 3px;
-        border: solid 1px $white; 
-        padding: $tiny;           
-        margin: auto 0px;        
+        border: solid 1px #eee; 
+        padding: 1.5rem;           
+        margin: auto 0px;     
+        
+        &--bgcolor-lightgrey {
+            background: #eee;
+        }
     }
     &__title {
         grid-area: 1/2/1/2;    
-        font-size: $medium;
-
-        // overflow: hidden;
-        // text-overflow: ellipsis;
-        // white-space: nowrap;
+        font-size: 3rem;        
         
+        overflow: hidden;
+
         color: $white;            
     }
     &__description {
         grid-area: 2/2/2/2;
-        font-size: $navbar_fontsize;
+        font-size: 2rem;
 
         overflow: hidden;
 
@@ -60,7 +66,7 @@
 
     &__description--wide {
         grid-area: 2/1/2/span 2;
-        font-size: $navbar_fontsize;
+        font-size: 2rem;
 
         color: $white;
     }
@@ -71,27 +77,42 @@
 
     &__additional--wide {
         grid-area: 3/1/3/span 2;
-        font-size: $small;
+        font-size: 2rem;
     }      
 }
 
-.customCell {
+.custom-cell {
     &__heading {
         font-weight: bold;
-        font-size: $medium;
+        font-size: 3rem;
 
-        margin: 5px 5px;
+        margin: 1rem 0rem;
+        @media screen and (max-width: $breakpoint) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__address {
         font-size: 2rem;
-        margin: 5px 5px;
+        margin: 1rem 0rem;
 
     }
 
     &__postcode {
         font-size: 2rem;
-        margin: 5px 5px;
+        margin: 1rem 0rem;
 
     }
+}
+
+.center-text {
+    vertical-align: middle;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    line-height: 7rem;
 }

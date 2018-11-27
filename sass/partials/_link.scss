@@ -2,7 +2,8 @@
 @import "helpers/variables";
 
 .brand {
-    @include img_background($energy_logo_path);
+    background: url($energy_logo_path) no-repeat;
+    background-size: 100% auto;
     width: 250px;
     min-height: 36px;
 
@@ -16,13 +17,13 @@
     display: inline;
     margin: auto;
     margin-right: 5rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: $white;
 
     @media screen and (max-width: $breakpoint) {
         display: none;
         margin-right: 1rem;
-        &.navlink--notHiddenAtBreakpoint {
+        &.navlink--not-hidden {
             display: block;
         }
     }
@@ -36,5 +37,24 @@
 
     @media screen and (max-width: $breakpoint) {
         font-size: 1.5rem;
+    }
+}
+
+.footer-box {
+    color: $white;
+    @media screen and (max-width: $breakpoint) {
+        margin-bottom: 5rem;
+    }
+
+    &__head-link {
+        font-size: 2rem;
+        margin: 1rem 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    &__link {
+        font-weight: bold;
+        font-size: 2.25rem;
+        margin: 1rem 1rem;
     }
 }

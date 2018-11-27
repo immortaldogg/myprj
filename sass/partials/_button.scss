@@ -4,26 +4,29 @@
 
     // Customs
     &--default {
-        margin-right: $small;
+        margin-right: 3rem;
         padding: 0px;
 
         @media screen and (max-width: $breakpoint) {
-            margin-right: 0px;
-            margin-bottom: $small;
+            margin-right: 3rem;
+            margin-bottom: 3rem;
         }
     }
-    &--centerNeeded {
+    &--margin-auto-bp {
         @media screen and (max-width: $breakpoint) {
             margin: auto;
         }
+    }
+    &--disabled {
+        opacity: 0.5;
     }
 
     // Elements
     &__span {
         border-right: solid 1px $white;
-        font-size: $small;    
+        font-size: 2rem;    
         
-        padding: $tiny;
+        padding: 1rem;
         // padding-left: 0px;
 
         @media screen and (max-width: $breakpoint) {
@@ -31,9 +34,9 @@
     }
 
     &__text {
-        font-size: $small;
+        font-size: 2rem;
 
-        padding: $tiny;
+        padding: 1rem;
         // padding-right: 0px;
 
         @media screen and (max-width: $breakpoint) {     
@@ -64,12 +67,26 @@
         color: $white;
     }
 
-    &--padding-tiny {
-        padding: $tiny;
+    &--bgcolor-fade {
+        background: $fade;
+        color: $white;
+    }
+    &--bgcolor-autumn {
+        background: $autumn;
+        color: $white;
+    }
+    &--bgcolor-skyblue {
+        background: $skyblue;
+        color: $white;
     }
 
-    &--marginRight-small {
-        margin-right: $small;
+
+    &--padding-tiny {
+        padding: 1.5rem;
+    }
+
+    &--margin-right-small {
+        margin-right: 3rem;
     }
 
     &--border-no {

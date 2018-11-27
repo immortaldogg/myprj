@@ -1,1 +1,4 @@
-Just a retard doing some code.
+Just some code.
+
+/login.html -> mine
+/index.html -> w3 template

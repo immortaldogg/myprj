@@ -1,0 +1,61 @@
+.overlay {
+  opacity: 0.9; }
+
+#my-brand {
+  width: 255px;
+  height: auto; }
+
+#my-search {
+  max-width: 6rem; }
+
+#my-version {
+  position: absolute;
+  left: 12rem;
+  top: 3rem; }
+
+#my-main-area {
+  background: url("/assets/images/bg_jumbotron.jpg");
+  background-size: cover;
+  padding: 15rem 14rem; }
+  #my-main-area > .card {
+    margin-right: 20rem; }
+    #my-main-area > .card > .content {
+      width: 100%; }
+      #my-main-area > .card > .content > .header {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 2.5rem; }
+      #my-main-area > .card > .content > .description {
+        margin-bottom: 2.5rem; }
+      #my-main-area > .card > .content > .extra {
+        display: flex;
+        flex-wrap: wrap; }
+        #my-main-area > .card > .content > .extra > .extra-item {
+          margin-right: 3rem; }
+
+.btn {
+  border-radius: 3px;
+  margin-right: 1rem;
+  padding: 0px; }
+  .btn.no.border {
+    border: none; }
+  @media screen and (max-width: 1200px) {
+    .btn {
+      margin-right: 1rem;
+      margin-bottom: 1rem; } }
+  @media screen and (max-width: 1200px) {
+    .btn--margin-auto-bp {
+      margin: auto; } }
+  .btn--disabled {
+    opacity: 0.5; }
+  .btn__span {
+    border-right: solid 1px #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-right: 0.25rem; }
+  .btn__text {
+    font-size: 1rem;
+    padding: 0.5rem; }
+
+.flex {
+  display: flex; }

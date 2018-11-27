@@ -74,3 +74,10 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+# Vscode
+.vscode/
+
+#semantic
+semantic/
+semantic.json

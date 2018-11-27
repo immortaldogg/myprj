@@ -1,0 +1,111 @@
+@import "helpers/colors";
+
+$breakpoint: 1200px;
+
+.overlay {
+    opacity: 0.9;
+}
+// my own scss
+#my-navbar {
+    // background: rgba(0,0,0, 0.4);
+}
+
+#my-brand {    
+    width: 255px;
+    height: auto;
+}
+
+#my-search {
+    max-width: 6rem;
+}
+
+#my-version {
+    position: absolute;
+    left: 12rem;
+    top: 3rem;
+}
+
+#my-main-area {
+    background: url("/assets/images/bg_jumbotron.jpg");
+    background-size: cover;
+
+    padding: 15rem 14rem;
+
+    &>.card {
+        margin-right: 20rem;
+        &>.content {
+            width: 100%;
+            &>.header {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 2.5rem;
+            }
+            &>.meta {
+                
+            }
+            &>.description {
+                margin-bottom: 2.5rem;
+            }
+            &>.extra {
+                display: flex;
+                flex-wrap: wrap;
+                &>.extra-item {
+                    margin-right: 3rem;
+                }
+            }
+        }
+    }
+}
+
+.btn {    
+    border-radius: 3px;
+    margin-right: 1rem;
+    padding: 0px;
+
+    &.no {
+        &.border {
+            border: none;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint) {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &--margin-auto-bp {
+        @media screen and (max-width: $breakpoint) {
+            margin: auto;
+        }
+    }
+
+    &--disabled {
+        opacity: 0.5;
+    }
+
+    // Elements
+    &__span {
+        border-right: solid 1px $white;
+        font-size: 1rem;    
+        
+        padding: 0.5rem;
+        padding-right: 0.25rem;
+
+        @media screen and (max-width: $breakpoint) {
+        }
+    }
+
+    &__text {
+        font-size: 1rem;
+
+        padding: 0.5rem;
+        // padding-left: 0.25rem;
+
+        @media screen and (max-width: $breakpoint) {     
+        }
+    }
+}
+
+.flex {
+    display: flex;
+}

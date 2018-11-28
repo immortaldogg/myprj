@@ -1,7 +1,4 @@
-Just some code.
-
-- mypage.html/host -> mine
-- index.html -> w3 template
+Basic Web UI Training
 
 Usage:
 - npm install

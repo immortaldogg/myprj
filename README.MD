@@ -1,4 +1,4 @@
 Just some code.
 
-- login.html -> mine
+- mypage.html/host -> mine
 - index.html -> w3 template

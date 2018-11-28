@@ -6,10 +6,11 @@ body, html {
   height: 100%;
   font-family: "Lato", sans-serif;
   background: black;
+  line-height: 1.8;
   font-size: 100%; }
 
 :root {
-  font-size: 20px; }
+  font-size: 6px; }
 
 .bold {
   font-weight: bold; }
@@ -79,7 +80,7 @@ body, html {
     padding-right: 5%;
     padding-bottom: 5%; }
   .container--carousel {
-    padding: 2%; }
+    padding: 4% 2%; }
     @media screen and (max-width: 1200px) {
       .container--carousel {
         padding: 14% 2%; } }
@@ -440,13 +441,18 @@ body, html {
         display: block; } }
 
 .version {
+  position: absolute;
+  top: 7rem;
+  left: 28rem;
   font-size: 2rem;
   background-color: #ff5722;
   color: #fff;
-  padding: 2px 9px; }
+  padding: 0.5rem 1.5rem; }
   @media screen and (max-width: 1200px) {
     .version {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      top: 6rem;
+      left: 20rem; } }
 
 .footer-box {
   color: #fff; }
@@ -566,7 +572,7 @@ body, html {
     float: right;
     height: inherit;
     background: #607D8B;
-    padding: 1rem; } }
+    padding: 0.1rem 1rem; } }
 
 .jumbotron--main {
   padding: 1.4%;
@@ -1548,7 +1554,7 @@ body, html {
         flex-basis: unset;
         margin-bottom: 25px; } }
   .grid--feature-block {
-    width: 70%; }
+    width: 80%; }
     @media screen and (max-width: 1200px) {
       .grid--feature-block {
         grid-template-columns: 9rem auto;

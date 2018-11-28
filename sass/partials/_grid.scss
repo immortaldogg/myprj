@@ -28,7 +28,7 @@
     &--feature-block {
         @extend %grid-default;
 
-        width: 70%;
+        width: 80%;
         @media screen and (max-width: $breakpoint) {
             grid-template-columns: 9rem auto;
             width: 100%;
